@@ -25,13 +25,32 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
     function showForm($id, array $options = []) {
         echo "<form name='form' action='" . Toolbox::getItemTypeFormURL(__CLASS__) . "' method='post'>";
         echo "<table class='tab_cadre_fixe'>";
-        echo "<tr><th colspan='2'>" . __('Configurações de Aprovação', 'solutionapprovalguard') . "</th></tr>";
+        echo "<tr><th colspan='2'>" . __('Configurações de Aprovação de Solução', 'solutionapprovalguard') . "</th></tr>";
 
         echo "<tr class='tab_bg_1'>";
-        echo "<td>" . __('Permitir comentários ao aprovar solução?', 'solutionapprovalguard') . "</td>";
+        echo "<td>" . __('Comentários durante aprovação de solução', 'solutionapprovalguard') . "</td>";
         echo "<td>";
-        // Usa o dropdown nativo de Sim/Não do GLPI
-        Dropdown::showYesNo('allow_comments', $this->fields['allow_comments'] ?? 1);
+        
+        // Array com as opções em Radio Buttons
+        $opcoes = [
+            0 => __('Permitidos (comportamento padrão do GLPI)', 'solutionapprovalguard'),
+            1 => __('Exibir aviso ao usuário, permitindo a aprovação da solução', 'solutionapprovalguard'),
+            2 => __('Bloquear aprovação da solução quando houver comentário', 'solutionapprovalguard')
+        ];
+
+        // Resgata o valor salvo no banco (ou assume 0 como padrão)
+        $valor_atual = $this->fields['allow_comments'] ?? 0;
+
+        // Desenha os botões de rádio
+        foreach ($opcoes as $valor => $rotulo) {
+            $checked = ($valor == $valor_atual) ? "checked='checked'" : "";
+            
+            echo "<label style='display: block; margin-bottom: 8px; cursor: pointer;'>";
+            echo "<input type='radio' name='allow_comments' value='$valor' $checked> ";
+            echo $rotulo;
+            echo "</label>";
+        }
+
         echo "</td>";
         echo "</tr>";
 
