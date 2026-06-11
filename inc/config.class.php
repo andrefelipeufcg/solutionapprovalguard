@@ -2,6 +2,11 @@
 class PluginSolutionapprovalguardConfig extends CommonDBTM {
     protected $displaylist = false;
 
+    // Força a tela a ler/salvar na mesma tabela exata que o hook criou, ignorando plurais
+    public static function getTable($classname = '') {
+        return 'glpi_plugin_solutionapprovalguard_configs';
+    }
+
     static function getTypeName($nb = 0) {
         return __('Solution Approval Guard', 'solutionapprovalguard');
     }
@@ -23,7 +28,8 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
     }
 
     function showForm($id, array $options = []) {
-        echo "<form name='form' action='" . Toolbox::getItemTypeFormURL(__CLASS__) . "' method='post'>";
+        // Trava o destino do botão de salvar para o arquivo exato
+        echo "<form name='form' action='config.form.php' method='post'>";
         echo "<table class='tab_cadre_fixe'>";
         echo "<tr><th colspan='2'>" . __('Configurações de Aprovação de Solução', 'solutionapprovalguard') . "</th></tr>";
 
@@ -31,7 +37,6 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
         echo "<td>" . __('Comentários durante aprovação de solução', 'solutionapprovalguard') . "</td>";
         echo "<td>";
         
-        // Array com as opções em Radio Buttons
         $opcoes = [
             0 => __('Permitidos (comportamento padrão do GLPI)', 'solutionapprovalguard'),
             1 => __('Exibir aviso ao usuário, permitindo a aprovação da solução', 'solutionapprovalguard'),
@@ -41,7 +46,7 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
         // Resgata o valor salvo no banco (ou assume 0 como padrão)
         $valor_atual = $this->fields['allow_comments'] ?? 0;
 
-        // Desenha os botões de rádio
+        // Desenha os botões radio
         foreach ($opcoes as $valor => $rotulo) {
             $checked = ($valor == $valor_atual) ? "checked='checked'" : "";
             

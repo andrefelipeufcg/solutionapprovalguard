@@ -6,9 +6,22 @@ function plugin_init_solutionapprovalguard() {
 
     $PLUGIN_HOOKS['csrf_compliant']['solutionapprovalguard'] = true;
 
-    // Hook disparado logo ANTES de inserir no banco
+    // Carrega o arquivo de regras de negócio para a memória do servidor.
+    // O uso da constante __DIR__ garante a montagem de um caminho absoluto seguro, 
+    // enquanto o include_once impede erros fatais de redeclaração de funções 
+    // caso o GLPI processe o setup.php mais de uma vez na mesma requisição.
+    // Sem esta linha, os métodos amarrados no array $PLUGIN_HOOKS ficariam inacessíveis (órfãos).
+    include_once(__DIR__ . '/hook.php');
+
+    // Registrar hooks usando as chaves de string compatíveis com o núcleo
+    // Para o hook pre_item_add do ITILFollowup
     $PLUGIN_HOOKS['pre_item_add']['solutionapprovalguard'] = [
         'ITILFollowup' => 'plugin_solutionapprovalguard_pre_item_add'
+    ];
+
+    // Para o hook pre_item_update do ITILSolution
+    $PLUGIN_HOOKS['pre_item_update']['solutionapprovalguard'] = [
+        'ITILSolution' => 'plugin_solutionapprovalguard_pre_item_update'
     ];
 
     // Registra a página de configuração
@@ -29,8 +42,7 @@ function plugin_version_solutionapprovalguard() {
         'homepage'       => '',
         'requirements'   => [
             'glpi' => [
-                'min' => '11.0.0',
-                'max' => '11.1.0'
+                'min' => '11.0.0'            
             ]
         ]
     ];
