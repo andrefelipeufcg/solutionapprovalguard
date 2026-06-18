@@ -159,12 +159,12 @@ This plugin is free software, distributed under the terms of the **GNU General P
 ---
 
 <a id="português"></a>
-# Solution Approval Guard (Plugin para GLPI 11)
+# Guarda de Aprovação de Solução (Plugin para GLPI 11)
 
 [![GLPI 11.0+](https://img.shields.io/badge/GLPI-11.0%2B-blue.svg)](https://glpi-project.org/)
 [![License: GPL v3+](https://img.shields.io/badge/License-GPL%20v3%2B-green.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
-O **Solution Approval Guard** é um plugin de usabilidade e integridade de processos desenvolvido especificamente para o **GLPI 11**. Ele permite que administradores controlem se os usuários finais podem ou não inserir comentários de texto no momento em que decidem **aprovar** a solução de um chamado.
+O **Guarda de Aprovação de Solução** é um plugin de usabilidade e integridade de processos desenvolvido especificamente para o **GLPI 11**. Ele permite que administradores controlem se os usuários finais podem ou não inserir comentários de texto no momento em que decidem **aprovar** a solução de um chamado.
 
 ---
 
@@ -194,7 +194,7 @@ Contudo, é comum encontrar um desvio de comportamento de usabilidade no ambient
 2. A equipe de suporte assume que o incidente foi 100% mitigado (visto que o status mudou para Fechado).
 3. O feedback do usuário fica esquecido no histórico do chamado, gerando retrabalho futuro e impactando negativamente os indicadores de SLA e a satisfação real do cliente.
 
-O **Solution Approval Guard** resolve essa contradição forçando o usuário a tomar uma decisão linear: se há o que comentar/reclamar, a solução deve ser recusada; se a solução resolveu o problema, ela deve ser aprovada com a caixa de texto limpa.
+O **Guarda de Aprovação de Solução** resolve essa contradição forçando o usuário a tomar uma decisão linear: se há o que comentar/reclamar, a solução deve ser recusada; se a solução resolveu o problema, ela deve ser aprovada com a caixa de texto limpa.
 
 ---
 
