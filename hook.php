@@ -74,7 +74,7 @@ function plugin_solutionapprovalguard_pre_item_add(CommonDBTM $item) {
             if (!empty($clean_content) && $clean_content !== $default_msg) {
                 if ($allow_comments == 2) {
                     Session::addMessageAfterRedirect(
-                        __('Não é permitido inserir comentários ao aprovar uma solução. Por favor, deixe a caixa vazia ou recuse a solução.', 'solutionapprovalguard'),
+                        __('It is not allowed to enter comments when approving a solution. Please leave the text box empty or refuse the solution.', 'solutionapprovalguard'),
                         false,
                         ERROR
                     );
@@ -85,7 +85,7 @@ function plugin_solutionapprovalguard_pre_item_add(CommonDBTM $item) {
                     
                 } elseif ($allow_comments == 1) {
                     Session::addMessageAfterRedirect(
-                        __('Aviso: Sua solução foi aprovada, mas para relatar pendências é necessário recusar a solução ou abrir um novo chamado.', 'solutionapprovalguard'),
+                        __('Warning: Your solution was approved, but to report pending issues you must refuse the solution or open a new ticket.', 'solutionapprovalguard'),
                         false,
                         WARNING
                     );
@@ -110,7 +110,7 @@ function plugin_solutionapprovalguard_pre_item_update(CommonDBTM $item) {
                 
                 if (!empty($clean_content) && $clean_content !== $default_msg) {
                     Session::addMessageAfterRedirect(
-                        __('Não é permitido inserir comentários ao aprovar uma solução. Por favor, deixe a caixa vazia ou recuse a solução.', 'solutionapprovalguard'),
+                        __('It is not allowed to enter comments when approving a solution. Please leave the text box empty or refuse the solution.', 'solutionapprovalguard'),
                         false,
                         ERROR
                     );

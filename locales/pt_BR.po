@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Solution Approval Guard"
+msgstr "Guarda de Aprova\u00e7\u00e3o de Solu\u00e7\u00e3o"
+
+msgid "Solution Approval Settings"
+msgstr "Configura\u00e7\u00f5es de Aprova\u00e7\u00e3o de Solu\u00e7\u00e3o"
+
+msgid "Comments during solution approval"
+msgstr "Coment\u00e1rios durante aprova\u00e7\u00e3o de solu\u00e7\u00e3o"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Permitidos (comportamento padr\u00e3o do GLPI)"
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Exibir aviso ao usu\u00e1rio, permitindo a aprova\u00e7\u00e3o da solu\u00e7\u00e3o"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Bloquear aprova\u00e7\u00e3o da solu\u00e7\u00e3o quando houver coment\u00e1rio"
+
+msgid "It is not allowed to enter comments when approving a solution. Please leave the text box empty or refuse the solution."
+msgstr "N\u00e3o \u00e9 permitido inserir coment\u00e1rios ao aprovar uma solu\u00e7\u00e3o. Por favor, deixe a caixa de texto vazia ou recuse a solu\u00e7\u00e3o."
+
+msgid "Warning: Your solution was approved, but to report pending issues you must refuse the solution or open a new ticket."
+msgstr "Aviso: Sua solu\u00e7\u00e3o foi aprovada, mas para relatar pend\u00eancias \u00e9 necess\u00e1rio recusar a solu\u00e7\u00e3o ou abrir um novo chamado."
+

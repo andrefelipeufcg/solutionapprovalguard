@@ -31,16 +31,16 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
         // Trava o destino do botão de salvar para o arquivo exato
         echo "<form name='form' action='config.form.php' method='post'>";
         echo "<table class='tab_cadre_fixe'>";
-        echo "<tr><th colspan='2'>" . __('Configurações de Aprovação de Solução', 'solutionapprovalguard') . "</th></tr>";
+        echo "<tr><th colspan='2'>" . __('Solution Approval Settings', 'solutionapprovalguard') . "</th></tr>";
 
         echo "<tr class='tab_bg_1'>";
-        echo "<td>" . __('Comentários durante aprovação de solução', 'solutionapprovalguard') . "</td>";
+        echo "<td>" . __('Comments during solution approval', 'solutionapprovalguard') . "</td>";
         echo "<td>";
         
         $opcoes = [
-            0 => __('Permitidos (comportamento padrão do GLPI)', 'solutionapprovalguard'),
-            1 => __('Exibir aviso ao usuário, permitindo a aprovação da solução', 'solutionapprovalguard'),
-            2 => __('Bloquear aprovação da solução quando houver comentário', 'solutionapprovalguard')
+            0 => __('Allowed (GLPI default behavior)', 'solutionapprovalguard'),
+            1 => __('Show warning to the user, allowing the solution approval', 'solutionapprovalguard'),
+            2 => __('Block solution approval when there is a comment', 'solutionapprovalguard')
         ];
 
         // Resgata o valor salvo no banco (ou assume 0 como padrão)
