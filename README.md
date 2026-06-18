@@ -293,7 +293,7 @@ O plugin utiliza o ecossistema de hooks do GLPI 11 para garantir cobertura total
 - `pre_item_add` amarrado à classe `ITILFollowup`: Atua como fallback de segurança caso a aprovação ocorra por meio de formulários legados ou ações estruturadas do tipo "Adicionar acompanhamento e fechar".
 
 ### Sincronização Estrita de Tabelas (`getTable`)
-Para evitar que o motor ORM do GLPI pluralizasse erroneamente o nome da tabela no banco de dados (gerando incompatibilities entre o salvamento da interface e a leitura do hook), a classe injeta explicitamente o método estático:
+Para evitar que o motor ORM do GLPI pluralizasse erroneamente o nome da tabela no banco de dados (gerando incompatibilidades entre o salvamento da interface e a leitura do hook), a classe injeta explicitamente o método estático:
 
 ```php
 public static function getTable($classname = '') {
