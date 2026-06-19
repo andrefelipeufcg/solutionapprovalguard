@@ -1,5 +1,5 @@
 <?php
-define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '1.0.0');
+define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '1.0.1');
 
 function plugin_init_solutionapprovalguard() {
     global $PLUGIN_HOOKS;
@@ -35,7 +35,7 @@ function plugin_init_solutionapprovalguard() {
 
 function plugin_version_solutionapprovalguard() {
     return [
-        'name'           => 'Solution Approval Guard',
+        'name'           => __('Solution Approval Guard', 'solutionapprovalguard'),
         'version'        => PLUGIN_SOLUTIONAPPROVALGUARD_VERSION,
         'author'         => 'andrefelipeufcg',
         'license'        => 'GPLv3+',
