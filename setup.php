@@ -39,7 +39,7 @@ function plugin_version_solutionapprovalguard() {
         'version'        => PLUGIN_SOLUTIONAPPROVALGUARD_VERSION,
         'author'         => 'andrefelipeufcg',
         'license'        => 'GPLv3+',
-        'homepage'       => '',
+        'homepage'       => 'https://github.com/andrefelipeufcg/solutionapprovalguard',
         'requirements'   => [
             'glpi' => [
                 'min' => '11.0.0'            
