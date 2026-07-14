@@ -5,7 +5,7 @@ function plugin_solutionapprovalguard_install() {
     // Cria a tabela de configuração se não existir
     if (!$DB->tableExists('glpi_plugin_solutionapprovalguard_configs')) {
         $query = "CREATE TABLE `glpi_plugin_solutionapprovalguard_configs` (
-            `id` int NOT NULL AUTO_INCREMENT,
+            `id` int unsigned NOT NULL AUTO_INCREMENT,
             `allow_comments` tinyint NOT NULL DEFAULT 0,
             PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;";
