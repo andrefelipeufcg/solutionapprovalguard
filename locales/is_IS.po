@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: is_IS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Leyft (sjálfgefin hegðun GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Loka á samþykki lausnar þegar athugasemd er til staðar"
+
+msgid "Comments during solution approval"
+msgstr "Athugasemdir við samþykki lausnar"
+
+msgid "Configuration saved successfully."
+msgstr "Stillingar vistuðust."
+
+msgid "Error saving configuration."
+msgstr "Villa við að vista stillingar."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Ekki er leyfilegt að slá inn athugasemdir þegar lausn er samþykkt. "
+"Vinsamlegast skildu textareitinn eftir auðan eða hafnaðu lausninni."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Sýna notanda viðvörun, leyfa samþykki"
+
+msgid "Solution Approval Guard"
+msgstr "Lausnarsamþykkisvörður"
+
+msgid "Solution Approval Settings"
+msgstr "Stillingar fyrir Samþykki Lausnar"
+
+msgid "Solution approved"
+msgstr "Lausn samþykkt"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Viðvörun: Lausnin þín var samþykkt, en til að tilkynna um óafgreidd vandamál"
+" verður þú að hafna lausninni eða opna nýjan miða."

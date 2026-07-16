@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "İzin verilir (GLPI varsayılan davranışı)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Yorum olduğunda çözüm onayını engelle"
+
+msgid "Comments during solution approval"
+msgstr "Çözüm onayı sırasındaki yorumlar"
+
+msgid "Configuration saved successfully."
+msgstr "Yapılandırma başarıyla kaydedildi."
+
+msgid "Error saving configuration."
+msgstr "Yapılandırma kaydedilirken hata oluştu."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Bir çözümü onaylarken yorum girilmesine izin verilmez. Lütfen metin kutusunu"
+" boş bırakın veya çözümü reddedin."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Kullanıcıya uyarı göster, onaylamaya izin ver"
+
+msgid "Solution Approval Guard"
+msgstr "Çözüm Onay Koruyucusu"
+
+msgid "Solution Approval Settings"
+msgstr "Çözüm Onay Ayarları"
+
+msgid "Solution approved"
+msgstr "Çözüm onaylandı"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Uyarı: Çözümünüz onaylandı, ancak bekleyen sorunları bildirmek için çözümü "
+"reddetmeli veya yeni bir talep açmalısınız."

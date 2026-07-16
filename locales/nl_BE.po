@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Toegestaan (standaardgedrag GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Blokkeer goedkeuring van oplossing wanneer er een opmerking is"
+
+msgid "Comments during solution approval"
+msgstr "Opmerkingen tijdens goedkeuring van de oplossing"
+
+msgid "Configuration saved successfully."
+msgstr "Configuratie succesvol opgeslagen."
+
+msgid "Error saving configuration."
+msgstr "Fout bij het opslaan van configuratie."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Het is niet toegestaan om opmerkingen in te voeren bij het goedkeuren van "
+"een oplossing. Laat het tekstvak leeg of weiger de oplossing."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Toon waarschuwing aan de gebruiker, sta goedkeuring toe"
+
+msgid "Solution Approval Guard"
+msgstr "Bewaker Oplossingsgoedkeuring"
+
+msgid "Solution Approval Settings"
+msgstr "Instellingen voor Oplossingsgoedkeuring"
+
+msgid "Solution approved"
+msgstr "Oplossing goedgekeurd"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Waarschuwing: Uw oplossing is goedgekeurd, maar om openstaande problemen te "
+"melden, moet u de oplossing weigeren of een nieuw ticket openen."

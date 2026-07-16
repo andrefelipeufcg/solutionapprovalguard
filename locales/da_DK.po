@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Tilladt (GLPI standardadfærd)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Bloker godkendelse af løsning, når der er en kommentar"
+
+msgid "Comments during solution approval"
+msgstr "Kommentarer under godkendelse af løsning"
+
+msgid "Configuration saved successfully."
+msgstr "Konfigurationen blev gemt med succes."
+
+msgid "Error saving configuration."
+msgstr "Fejl ved lagring af konfiguration."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Det er ikke tilladt at indtaste kommentarer, når man godkender en løsning. "
+"Lad tekstboksen være tom eller afvis løsningen."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Vis advarsel til brugeren, tillad godkendelse"
+
+msgid "Solution Approval Guard"
+msgstr "Løsningsgodkendelsesvagt"
+
+msgid "Solution Approval Settings"
+msgstr "Indstillinger for Løsningsgodkendelse"
+
+msgid "Solution approved"
+msgstr "Løsning godkendt"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Advarsel: Din løsning blev godkendt, men for at rapportere afventende "
+"problemer skal du afvise løsningen eller åbne en ny billet."

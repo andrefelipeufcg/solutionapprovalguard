@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "許可（GLPIのデフォルトの動作）"
+
+msgid "Block solution approval when there is a comment"
+msgstr "コメントがある場合にソリューションの承認をブロックする"
+
+msgid "Comments during solution approval"
+msgstr "ソリューション承認中のコメント"
+
+msgid "Configuration saved successfully."
+msgstr "設定が正常に保存されました。"
+
+msgid "Error saving configuration."
+msgstr "設定の保存中にエラーが発生しました。"
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"ソリューションを承認する際にコメントを入力することは許可されていません。テキストボックスを空のままにするか、ソリューションを拒否してください。"
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "ユーザーに警告を表示し、承認を許可する"
+
+msgid "Solution Approval Guard"
+msgstr "ソリューション承認ガード"
+
+msgid "Solution Approval Settings"
+msgstr "ソリューション承認設定"
+
+msgid "Solution approved"
+msgstr "ソリューションが承認されました"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr "警告：ソリューションは承認されましたが、保留中の問題を報告するには、ソリューションを拒否するか、新しいチケットを開く必要があります。"

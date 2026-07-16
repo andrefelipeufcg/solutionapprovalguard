@@ -17,6 +17,7 @@
          <da_DK>Styrer, om brugere kan indtaste kommentarer, når de godkender en billetløsning.</da_DK>
          <de_DE>Steuert, ob Benutzer beim Genehmigen einer Ticketlösung Kommentare eingeben können.</de_DE>
          <el_GR>Ελέγχει εάν οι χρήστες μπορούν να εισάγουν σχόλια κατά την έγκριση μιας λύσης αιτήματος.</el_GR>
+         <en>Controls whether users can enter comments when approving a ticket solution.</en>
          <en_GB>Controls whether users can enter comments when approving a ticket solution.</en_GB>
          <en_US>Controls whether users can enter comments when approving a ticket solution.</en_US>
          <eo>Kontrolas ĉu uzantoj povas enigi komentojn kiam ili aprobas biletan solvon.</eo>
@@ -86,6 +87,7 @@
          <da_DK>Solution Approval Guard er et brugervenligheds- og procesintegritets-plugin udviklet specielt til GLPI 11. Det giver administratorer mulighed for at styre, om slutbrugere kan indtaste tekstkommentarer, når de godkender en billetløsning.</da_DK>
          <de_DE>Solution Approval Guard ist ein Usability- und Prozessintegritäts-Plugin, das speziell für GLPI 11 entwickelt wurde. Es ermöglicht Administratoren zu steuern, ob Endbenutzer Textkommentare eingeben können, wenn sie eine Ticketlösung genehmigen.</de_DE>
          <el_GR>Το Solution Approval Guard είναι ένα πρόσθετο χρηστικότητας και ακεραιότητας διαδικασιών που αναπτύχθηκε ειδικά για το GLPI 11. Επιτρέπει στους διαχειριστές να ελέγχουν εάν οι τελικοί χρήστες μπορούν να εισάγουν σχόλια κειμένου κατά την έγκριση μιας λύσης αιτήματος.</el_GR>
+         <en>Solution Approval Guard is a usability and process integrity plugin developed specifically for GLPI 11. It allows administrators to control whether end users can enter text comments when approving a ticket solution.</en>
          <en_GB>Solution Approval Guard is a usability and process integrity plugin developed specifically for GLPI 11. It allows administrators to control whether end users can enter text comments when approving a ticket solution.</en_GB>
          <en_US>Solution Approval Guard is a usability and process integrity plugin developed specifically for GLPI 11. It allows administrators to control whether end users can enter text comments when approving a ticket solution.</en_US>
          <eo>Solution Approval Guard estas kromaĵo por uzebleco kaj proceza integreco evoluigita specife por GLPI 11. Ĝi permesas al administrantoj kontroli ĉu finuzantoj povas enigi tekstajn komentojn kiam ili aprobas biletan solvon.</eo>
@@ -306,6 +308,12 @@
          <tag>εγκριση</tag>
          <tag>helpdesk</tag>
       </el_GR>
+      <en>
+         <tag>itil</tag>
+         <tag>solution</tag>
+         <tag>approval</tag>
+         <tag>helpdesk</tag>
+      </en>
       <en_GB>
          <tag>itil</tag>
          <tag>solution</tag>

@@ -1,4 +1,7 @@
 <?php
+
+use Glpi\Application\View\TemplateRenderer;
+
 class PluginSolutionapprovalguardConfig extends CommonDBTM {
     protected $displaylist = false;
 
@@ -28,46 +31,15 @@ class PluginSolutionapprovalguardConfig extends CommonDBTM {
     }
 
     function showForm($id, array $options = []) {
-        // Trava o destino do botão de salvar para o arquivo exato
-        echo "<form name='form' action='config.form.php' method='post'>";
-        echo "<table class='tab_cadre_fixe'>";
-        echo "<tr><th colspan='2'>" . __('Solution Approval Settings', 'solutionapprovalguard') . "</th></tr>";
-
-        echo "<tr class='tab_bg_1'>";
-        echo "<td>" . __('Comments during solution approval', 'solutionapprovalguard') . "</td>";
-        echo "<td>";
-        
-        $opcoes = [
-            0 => __('Allowed (GLPI default behavior)', 'solutionapprovalguard'),
-            1 => __('Show warning to the user, allowing the solution approval', 'solutionapprovalguard'),
-            2 => __('Block solution approval when there is a comment', 'solutionapprovalguard')
-        ];
-
-        // Resgata o valor salvo no banco (ou assume 0 como padrão)
         $valor_atual = $this->fields['allow_comments'] ?? 0;
 
-        // Desenha os botões radio
-        foreach ($opcoes as $valor => $rotulo) {
-            $checked = ($valor == $valor_atual) ? "checked='checked'" : "";
-            
-            echo "<label style='display: block; margin-bottom: 8px; cursor: pointer;'>";
-            echo "<input type='radio' name='allow_comments' value='$valor' $checked> ";
-            echo $rotulo;
-            echo "</label>";
-        }
+        TemplateRenderer::getInstance()->display(
+            '@solutionapprovalguard/config.html.twig',
+            [
+                'current_value' => $valor_atual,
+            ]
+        );
 
-        echo "</td>";
-        echo "</tr>";
-
-        echo "<tr class='tab_bg_2'>";
-        echo "<td colspan='2' class='center'>";
-        echo "<input type='hidden' name='id' value='1'>";
-        echo "<input type='submit' name='update' class='btn btn-primary' value='" . _sx('button', 'Save') . "'>";
-        echo "</td>";
-        echo "</tr>";
-
-        echo "</table>";
-        Html::closeForm();
         return true;
     }
-}
+}

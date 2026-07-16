@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: hr_HR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Dopušteno (zadano ponašanje GLPI-ja)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Blokiraj odobrenje rješenja kada postoji komentar"
+
+msgid "Comments during solution approval"
+msgstr "Komentari tijekom odobrenja rješenja"
+
+msgid "Configuration saved successfully."
+msgstr "Konfiguracija je uspješno spremljena."
+
+msgid "Error saving configuration."
+msgstr "Pogreška pri spremanju konfiguracije."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Nije dopušteno unositi komentare prilikom odobravanja rješenja. Ostavite "
+"tekstni okvir praznim ili odbijte rješenje."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Prikaži upozorenje korisniku, dopusti odobrenje"
+
+msgid "Solution Approval Guard"
+msgstr "Zaštitnik Odobrenja Rješenja"
+
+msgid "Solution Approval Settings"
+msgstr "Postavke Odobrenja Rješenja"
+
+msgid "Solution approved"
+msgstr "Rješenje odobreno"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Upozorenje: Vaše je rješenje odobreno, ali za prijavu problema na čekanju "
+"morate odbiti rješenje ili otvoriti novi tiket."

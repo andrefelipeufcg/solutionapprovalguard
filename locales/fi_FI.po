@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Sallittu (GLPI:n oletuskäyttäytyminen)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Estä ratkaisun hyväksyminen, kun on kommentti"
+
+msgid "Comments during solution approval"
+msgstr "Kommentit ratkaisun hyväksymisen aikana"
+
+msgid "Configuration saved successfully."
+msgstr "Määritykset tallennettu onnistuneesti."
+
+msgid "Error saving configuration."
+msgstr "Virhe tallennettaessa määrityksiä."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Kommenttien kirjoittaminen ei ole sallittua ratkaisua hyväksyttäessä. Jätä "
+"tekstikenttä tyhjäksi tai hylkää ratkaisu."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Näytä varoitus käyttäjälle, salli hyväksyntä"
+
+msgid "Solution Approval Guard"
+msgstr "Ratkaisun Hyväksynnän Vartija"
+
+msgid "Solution Approval Settings"
+msgstr "Ratkaisun Hyväksynnän Asetukset"
+
+msgid "Solution approved"
+msgstr "Ratkaisu hyväksytty"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Varoitus: Ratkaisusi on hyväksytty, mutta odottavien ongelmien "
+"ilmoittamiseksi sinun on hylättävä ratkaisu tai avattava uusi tiketti."

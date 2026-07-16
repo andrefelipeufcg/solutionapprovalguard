@@ -17,7 +17,23 @@ if (!$config->getFromDB(1)) {
 
 // Salva os dados se o form for enviado
 if (isset($_POST["update"])) {
-    $config->update($_POST);
+    $result = $config->update([
+        'id'             => 1,
+        'allow_comments' => (int)($_POST['allow_comments'] ?? 0),
+    ]);
+    if ($result) {
+        Session::addMessageAfterRedirect(
+            __('Configuration saved successfully.', 'solutionapprovalguard'),
+            false,
+            INFO
+        );
+    } else {
+        Session::addMessageAfterRedirect(
+            __('Error saving configuration.', 'solutionapprovalguard'),
+            false,
+            ERROR
+        );
+    }
     Html::back();
 }
 
