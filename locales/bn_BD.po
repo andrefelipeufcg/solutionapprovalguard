@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "অনুমোদিত (GLPI ডিফল্ট আচরণ)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "মন্তব্য থাকলে সমাধান অনুমোদন ব্লক করুন"
+
+msgid "Comments during solution approval"
+msgstr "সমাধান অনুমোদনের সময় মন্তব্য"
+
+msgid "Configuration saved successfully."
+msgstr "কনফিগারেশন সফলভাবে সংরক্ষণ করা হয়েছে।"
+
+msgid "Error saving configuration."
+msgstr "কনফিগারেশন সংরক্ষণে ত্রুটি।"
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"কোনো সমাধান অনুমোদনের সময় মন্তব্য প্রবেশের অনুমতি নেই। অনুগ্রহ করে টেক্সট "
+"বক্সটি ফাঁকা রাখুন অথবা সমাধানটি প্রত্যাখ্যান করুন।"
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "ব্যবহারকারীকে সতর্কতা দেখান, অনুমোদনের অনুমতি দিন"
+
+msgid "Solution Approval Guard"
+msgstr "সমাধান অনুমোদন রক্ষী"
+
+msgid "Solution Approval Settings"
+msgstr "সমাধান অনুমোদনের সেটিংস"
+
+msgid "Solution approved"
+msgstr "সমাধান অনুমোদিত"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"সতর্কতা: আপনার সমাধানটি অনুমোদিত হয়েছে, কিন্তু অমীমাংসিত সমস্যাগুলি রিপোর্ট"
+" করতে আপনাকে অবশ্যই সমাধানটি প্রত্যাখ্যান করতে হবে বা একটি নতুন টিকিট খুলতে "
+"হবে।"

@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: th_TH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "อนุญาต (พฤติกรรมเริ่มต้นของ GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "บล็อกการอนุมัติโซลูชันเมื่อมีความคิดเห็น"
+
+msgid "Comments during solution approval"
+msgstr "ความคิดเห็นระหว่างการอนุมัติโซลูชัน"
+
+msgid "Configuration saved successfully."
+msgstr "บันทึกการกำหนดค่าสำเร็จแล้ว"
+
+msgid "Error saving configuration."
+msgstr "เกิดข้อผิดพลาดในการบันทึกการกำหนดค่า"
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"ไม่อนุญาตให้ป้อนความคิดเห็นเมื่ออนุมัติโซลูชัน "
+"โปรดเว้นกล่องข้อความไว้หรือปฏิเสธโซลูชัน"
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "แสดงคำเตือนต่อผู้ใช้ อนุญาตให้มีการอนุมัติ"
+
+msgid "Solution Approval Guard"
+msgstr "ผู้พิทักษ์การอนุมัติโซลูชัน"
+
+msgid "Solution Approval Settings"
+msgstr "การตั้งค่าการอนุมัติโซลูชัน"
+
+msgid "Solution approved"
+msgstr "โซลูชันได้รับการอนุมัติ"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"คำเตือน: โซลูชันของคุณได้รับการอนุมัติแล้ว "
+"แต่หากต้องการรายงานปัญหาที่รอดำเนินการ คุณต้องปฏิเสธโซลูชันหรือเปิดตั๋วใหม่"

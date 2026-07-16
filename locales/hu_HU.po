@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Engedélyezve (GLPI alapértelmezett viselkedés)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Megoldás jóváhagyásának blokkolása megjegyzés esetén"
+
+msgid "Comments during solution approval"
+msgstr "Megjegyzések a megoldás jóváhagyása során"
+
+msgid "Configuration saved successfully."
+msgstr "A konfiguráció sikeresen mentve."
+
+msgid "Error saving configuration."
+msgstr "Hiba a konfiguráció mentésekor."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Megoldás jóváhagyásakor nem megengedett megjegyzések bevitele. Kérjük, "
+"hagyja üresen a szövegdobozt, vagy utasítsa el a megoldást."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr ""
+"Figyelmeztetés megjelenítése a felhasználónak, engedélyezve a jóváhagyást"
+
+msgid "Solution Approval Guard"
+msgstr "Megoldás Jóváhagyás Védő"
+
+msgid "Solution Approval Settings"
+msgstr "Megoldás Jóváhagyás Beállítások"
+
+msgid "Solution approved"
+msgstr "Megoldás jóváhagyva"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Figyelem: A megoldását jóváhagyták, de a függőben lévő problémák "
+"jelentéséhez el kell utasítania a megoldást, vagy új jegyet kell nyitnia."

@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Consentito (comportamento predefinito di GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Blocca l'approvazione della soluzione in presenza di un commento"
+
+msgid "Comments during solution approval"
+msgstr "Commenti durante l'approvazione della soluzione"
+
+msgid "Configuration saved successfully."
+msgstr "Configurazione salvata con successo."
+
+msgid "Error saving configuration."
+msgstr "Errore nel salvataggio della configurazione."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Non è consentito inserire commenti durante l'approvazione di una soluzione. "
+"Si prega di lasciare vuota la casella di testo o rifiutare la soluzione."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Mostra avviso all'utente, consentendo l'approvazione"
+
+msgid "Solution Approval Guard"
+msgstr "Guardia di Approvazione delle Soluzioni"
+
+msgid "Solution Approval Settings"
+msgstr "Impostazioni di Approvazione della Soluzione"
+
+msgid "Solution approved"
+msgstr "Soluzione approvata"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Avviso: La tua soluzione è stata approvata, ma per segnalare problemi in "
+"sospeso devi rifiutare la soluzione o aprire un nuovo ticket."

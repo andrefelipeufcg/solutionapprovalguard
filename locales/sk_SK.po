@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Povolené (predvolené správanie GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Blokovať schválenie riešenia, keď je prítomný komentár"
+
+msgid "Comments during solution approval"
+msgstr "Komentáre počas schvaľovania riešenia"
+
+msgid "Configuration saved successfully."
+msgstr "Konfigurácia bola úspešne uložená."
+
+msgid "Error saving configuration."
+msgstr "Chyba pri ukladaní konfigurácie."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Pri schvaľovaní riešenia nie je povolené zadávať komentáre. Prosím, "
+"ponechajte textové pole prázdne alebo riešenie zamietnite."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Zobraziť varovanie používateľovi, povoliť schválenie"
+
+msgid "Solution Approval Guard"
+msgstr "Strážca Schvaľovania Riešení"
+
+msgid "Solution Approval Settings"
+msgstr "Nastavenia Schvaľovania Riešení"
+
+msgid "Solution approved"
+msgstr "Riešenie schválené"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Varovanie: Vaše riešenie bolo schválené, ale na nahlásenie nevyriešených "
+"problémov musíte riešenie zamietnuť alebo otvoriť nový tiket."

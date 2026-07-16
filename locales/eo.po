@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Permesita (defaŭlta konduto de GLPI)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Bloki aprobon de solvo kiam estas komento"
+
+msgid "Comments during solution approval"
+msgstr "Komentoj dum aprobo de solvo"
+
+msgid "Configuration saved successfully."
+msgstr "Agordo sukcese konservita."
+
+msgid "Error saving configuration."
+msgstr "Eraro dum konservado de agordo."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Ne estas permesite enigi komentojn dum aprobado de solvo. Bonvolu lasi la "
+"tekstujon malplena aŭ rifuzi la solvon."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Montri averton al la uzanto, permesante la aprobon"
+
+msgid "Solution Approval Guard"
+msgstr "Solva Aproba Gardisto"
+
+msgid "Solution Approval Settings"
+msgstr "Solvaj Aprobaj Agordoj"
+
+msgid "Solution approved"
+msgstr "Solvo aprobita"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Averto: Via solvo estis aprobita, sed por raporti pritraktatajn problemojn "
+"vi devas rifuzi la solvon aŭ malfermi novan bileton."

@@ -1,0 +1,37 @@
+{% import "components/form/fields_macros.html.twig" as fields %}
+
+<form name="form" action="config.form.php" method="POST">
+   <input type="hidden" name="id" value="1">
+   <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token() }}">
+
+   <table class="tab_cadre_fixe">
+      <tr>
+         <th colspan="2">{{ __('Solution Approval Settings', 'solutionapprovalguard') }}</th>
+      </tr>
+      <tr class="tab_bg_1">
+         <td>{{ __('Comments during solution approval', 'solutionapprovalguard') }}</td>
+         <td>
+            {% set options = {
+               0: __('Allowed (GLPI default behavior)', 'solutionapprovalguard'),
+               1: __('Show warning to the user, allowing the solution approval', 'solutionapprovalguard'),
+               2: __('Block solution approval when there is a comment', 'solutionapprovalguard')
+            } %}
+            {% for value, label in options %}
+               <label style="display: block; margin-bottom: 8px; cursor: pointer;">
+                  <input type="radio" name="allow_comments" value="{{ value }}"
+                     {{ value == current_value ? 'checked="checked"' : '' }}>
+                  {{ label }}
+               </label>
+            {% endfor %}
+         </td>
+      </tr>
+      <tr class="tab_bg_2">
+         <td colspan="2" class="center">
+            <button type="submit" name="update" class="btn btn-primary" value="1">
+               <i class="ti ti-device-floppy"></i>
+               <span>{{ _x('button', 'Save') }}</span>
+            </button>
+         </td>
+      </tr>
+   </table>
+</form>

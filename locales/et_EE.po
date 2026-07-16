@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolutionApprovalGuard 1.0\n"
+"Language: et_EE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Allowed (GLPI default behavior)"
+msgstr "Lubatud (GLPI vaikimisi käitumine)"
+
+msgid "Block solution approval when there is a comment"
+msgstr "Blokeeri lahenduse kinnitamine, kui on kommentaar"
+
+msgid "Comments during solution approval"
+msgstr "Kommentaarid lahenduse kinnitamise ajal"
+
+msgid "Configuration saved successfully."
+msgstr "Konfiguratsioon on edukalt salvestatud."
+
+msgid "Error saving configuration."
+msgstr "Viga konfiguratsiooni salvestamisel."
+
+msgid ""
+"It is not allowed to enter comments when approving a solution. Please leave "
+"the text box empty or refuse the solution."
+msgstr ""
+"Lahenduse kinnitamisel pole lubatud kommentaare sisestada. Palun jätke "
+"tekstikast tühjaks või lükake lahendus tagasi."
+
+msgid "Show warning to the user, allowing the solution approval"
+msgstr "Näita kasutajale hoiatust, lubades kinnitamise"
+
+msgid "Solution Approval Guard"
+msgstr "Lahenduse Kinnitamise Valvur"
+
+msgid "Solution Approval Settings"
+msgstr "Lahenduse Kinnitamise Seaded"
+
+msgid "Solution approved"
+msgstr "Lahendus kinnitatud"
+
+msgid ""
+"Warning: Your solution was approved, but to report pending issues you must "
+"refuse the solution or open a new ticket."
+msgstr ""
+"Hoiatus: Teie lahendus kinnitati, kuid pooleliolevate probleemide "
+"teatamiseks peate lahenduse tagasi lükkama või avama uue pileti."
