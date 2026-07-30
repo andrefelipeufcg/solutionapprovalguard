@@ -1,5 +1,6 @@
 <?php
-define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '1.0.2');
+define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '1.0.3');
+define('PLUGIN_SOLUTIONAPPROVALGUARD_MIN_GLPI', '10.0.0');
 
 function plugin_init_solutionapprovalguard() {
     global $PLUGIN_HOOKS;
@@ -28,7 +29,7 @@ function plugin_init_solutionapprovalguard() {
     $PLUGIN_HOOKS['config_page']['solutionapprovalguard'] = 'front/config.form.php';
 
     // Registra a classe para aparecer na aba Configurar > Plugins
-    Plugin::registerClass('PluginSolutionapprovalguardConfig', [
+    Plugin::registerClass('GlpiPlugin\Solutionapprovalguard\Config', [
         'addtabon' => ['Config']
     ]);
 }
@@ -42,13 +43,16 @@ function plugin_version_solutionapprovalguard() {
         'homepage'       => 'https://github.com/andrefelipeufcg/solutionapprovalguard',
         'requirements'   => [
             'glpi' => [
-                'min' => '11.0.0'            
+                'min' => PLUGIN_SOLUTIONAPPROVALGUARD_MIN_GLPI            
             ]
         ]
     ];
 }
 
 function plugin_solutionapprovalguard_check_prerequisites() {
+    if (version_compare(GLPI_VERSION, PLUGIN_SOLUTIONAPPROVALGUARD_MIN_GLPI, '<')) {
+        return false;
+    }
     return true;
 }
 

@@ -1,10 +1,12 @@
 <?php
-include ("../../../inc/includes.php");
+$inc = __DIR__ . '/../../../inc/includes.php';
+if (!file_exists($inc)) { $inc = ($_SERVER['DOCUMENT_ROOT'] ?? '') . '/inc/includes.php'; }
+if (!file_exists($inc)) { $inc = ($_SERVER['DOCUMENT_ROOT'] ?? '') . '/../inc/includes.php'; }
+include $inc;
 
-// Verifica se o usuário tem permissão de gerenciar configurações
 Session::checkRight("config", UPDATE);
 
-$config = new PluginSolutionapprovalguardConfig();
+$config = new \GlpiPlugin\Solutionapprovalguard\Config();
 
 // Tenta carregar do banco. Se não existir (porque o plugin não foi reinstalado), ele cria na hora
 if (!$config->getFromDB(1)) {
@@ -38,7 +40,7 @@ if (isset($_POST["update"])) {
 }
 
 // Renderiza a página
-Html::header(PluginSolutionapprovalguardConfig::getTypeName(1), $_SERVER['PHP_SELF'], "config", "plugins");
+Html::header(\GlpiPlugin\Solutionapprovalguard\Config::getTypeName(1), $_SERVER['PHP_SELF'], "config", "plugins");
 
 // Chama o formulário diretamente em vez de tentar montar as abas
 $config->showForm(1);
