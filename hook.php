@@ -39,7 +39,7 @@ function plugin_solutionapprovalguard_uninstall() {
 
 // LÊ A CONFIGURAÇÃO USANDO A CLASSE (Garante que tela e hook usem os mesmos dados)
 function plugin_solutionapprovalguard_get_config() {
-    $config = new PluginSolutionapprovalguardConfig();
+    $config = new \GlpiPlugin\Solutionapprovalguard\Config();
     if ($config->getFromDB(1)) {
         return (int)$config->fields['allow_comments'];
     }
