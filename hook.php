@@ -50,7 +50,7 @@ function plugin_solutionapprovalguard_get_content($input_array = null) {
     if (is_array($input_array) && isset($input_array['content'])) {
         $raw = $input_array['content'];
     } else {
-        $raw = $_REQUEST['content'] ?? '';
+        $raw = $_POST['content'] ?? $_GET['content'] ?? '';
         if (empty($raw)) {
             $json = file_get_contents('php://input');
             if (!empty($json)) {

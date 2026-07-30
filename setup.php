@@ -49,6 +49,9 @@ function plugin_version_solutionapprovalguard() {
 }
 
 function plugin_solutionapprovalguard_check_prerequisites() {
+    if (version_compare(GLPI_VERSION, '11.0.0', '<')) {
+        return false;
+    }
     return true;
 }
 

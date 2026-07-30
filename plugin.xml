@@ -650,4 +650,7 @@
          <tag>helpdesk</tag>
       </zh_TW>
    </tags>
+   <screenshots>
+      <screenshot>https://raw.githubusercontent.com/andrefelipeufcg/solutionapprovalguard/main/screenshot.png</screenshot>
+   </screenshots>
 </root>
