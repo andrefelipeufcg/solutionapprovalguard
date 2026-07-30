@@ -1,0 +1,56 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+
+      - name: Determine version from tag
+        id: version
+        run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+
+      - name: Build release ZIP
+        run: |
+          PLUGIN_NAME="solutionapprovalguard"
+          TAG="${{ steps.version.outputs.tag }}"
+
+          # Create a temporary directory with the plugin name
+          mkdir -p /tmp/build/${PLUGIN_NAME}
+
+          # Copy all files except git and CI artifacts
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitignore' \
+            --exclude='docs' \
+            --exclude='tests' \
+            --exclude='composer.lock' \
+            --exclude='.phpunit.result.cache' \
+            ./ /tmp/build/${PLUGIN_NAME}/
+
+          # Create the ZIP from the parent so the archive root is solutionapprovalguard/
+          cd /tmp/build
+          zip -r "${GITHUB_WORKSPACE}/glpi-solutionapprovalguard-${TAG}.zip" ${PLUGIN_NAME}/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: glpi-solutionapprovalguard-${{ steps.version.outputs.tag }}.zip
+          generate_release_notes: true
