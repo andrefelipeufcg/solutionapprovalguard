@@ -155,6 +155,11 @@
    </authors>
     <versions>
        <version>
+          <num>1.0.3</num>
+          <compatibility>&gt;=11.0.0</compatibility>
+          <download_url>https://github.com/andrefelipeufcg/solutionapprovalguard/archive/refs/tags/v1.0.3.zip</download_url>
+       </version>
+       <version>
           <num>1.0.2</num>
           <compatibility>&gt;=11.0.0</compatibility>
           <download_url>https://github.com/andrefelipeufcg/solutionapprovalguard/archive/refs/tags/v1.0.2.zip</download_url>
