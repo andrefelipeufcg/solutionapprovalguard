@@ -28,6 +28,16 @@ function plugin_init_solutionapprovalguard() {
     // Registra a página de configuração
     $PLUGIN_HOOKS['config_page']['solutionapprovalguard'] = 'front/config.form.php';
 
+    // Injeta no front-end a config atual (modo) + textos traduzidos, e o
+    // script que exibe uma confirmação bloqueante (glpi_confirm) antes de
+    // aprovar uma solução com comentário quando o modo "aviso" está ativo.
+    // A ordem importa: js_config.php define PLUGIN_SAG_CONFIG antes que
+    // solutionapprovalguard.js seja executado.
+    $PLUGIN_HOOKS['add_javascript']['solutionapprovalguard'] = [
+        'ajax/js_config.php',
+        'js/solutionapprovalguard.js',
+    ];
+
     // Registra a classe para aparecer na aba Configurar > Plugins
     Plugin::registerClass('GlpiPlugin\Solutionapprovalguard\Config', [
         'addtabon' => ['Config']
