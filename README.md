@@ -48,6 +48,7 @@ However, there is a common usability deviation in production environments: some 
 - **Agnostic Request Interception:** Capable of capturing approvals made both through the traditional form (`$_POST`) and through asynchronous payloads (`application/json`) sent via AJAX by the new GLPI 10+ Timeline.
 - **Modular Admin Panel:** Native interface integrated into *Setup > Plugins*, using radio buttons selectors for easy handling.
 - **API Security:** Handled validations to not interrupt or break integrations via REST API or CLI (Command Line Interface) calls.
+- **Blocking Confirmation Dialog:** In "warning" mode, instead of a simple after-the-fact toast, the user gets a modal confirmation dialog (built with GLPI's own dialog helpers) that must be explicitly acknowledged *before* an approval with a comment is actually submitted.
 
 ---
 
@@ -56,7 +57,7 @@ However, there is a common usability deviation in production environments: some 
 The administrator can define three rigor levels in the plugin panel:
 
 - **Allowed (GLPI default behavior):** The plugin remains neutral. Users can approve solutions and add comments simultaneously.
-- **Show warning to the user:** If the user types a comment and clicks approve, GLPI will display a yellow warning balloon (`WARNING`) at the top of the screen, but will allow the ticket to be closed. Ideal for transition phases and user acculturation.
+- **Show warning to the user:** If the user types a comment and clicks approve, a blocking confirmation dialog explains that the comment will not reopen the ticket, and the user must explicitly click "Approve anyway" before the ticket is actually closed (or "Cancel" to go back and use the refuse button instead). Ideal for transition phases and user acculturation.
 - **Block solution approval when there is a comment:** The strictest level. If there is typed text, the database save is **aborted immediately** and a red error notification (`ERROR`) is displayed on the screen, forcing the user to erase the text to approve, or use the refuse button.
 
 ---
@@ -204,6 +205,7 @@ O **Guarda de Aprovação de Solução** resolve essa contradição forçando o 
 - **Interceptação Agnóstica de Requisições:** Capaz de capturar aprovações feitas tanto pelo formulário tradicional (`$_POST`) quanto por payloads assíncronos (`application/json`) enviados via AJAX pela nova linha do tempo (Timeline) do GLPI 10+.
 - **Painel Administrativo Modular:** Interface nativa integrada em *Configurar > Plugins*, utilizando seletores em botões de rádio para fácil manuseio.
 - **Segurança para APIs:** Validações tratadas para não interromper ou quebrar integrações via API REST ou chamadas CLI (Command Line Interface).
+- **Caixa de Diálogo de Confirmação Bloqueante:** No modo "aviso", em vez de um simples toast exibido depois do fato, o usuário recebe uma caixa de diálogo modal (construída com os próprios helpers de diálogo do GLPI) que precisa ser explicitamente confirmada *antes* que uma aprovação com comentário seja realmente enviada.
 
 ---
 
@@ -212,7 +214,7 @@ O **Guarda de Aprovação de Solução** resolve essa contradição forçando o 
 O administrador pode definir três níveis de rigor no painel do plugin:
 
 - **Permitidos (comportamento padrão do GLPI):** O plugin permanece neutro. Os usuários podem aprovar soluções e adicionar comentários simultaneamente.
-- **Exibir aviso ao usuário:** Caso o usuário digite um comentário e clique em aprovar, o GLPI exibirá um balão de aviso amarelo (`WARNING`) no topo da tela, mas permitirá o fechamento do chamado. Ideal para fases de transição e aculturamento de usuários.
+- **Exibir aviso ao usuário:** Caso o usuário digite um comentário e clique em aprovar, uma caixa de diálogo bloqueante explica que o comentário não reabrirá o chamado, e o usuário precisa clicar explicitamente em "Aprovar mesmo assim" para que o chamado seja realmente fechado (ou em "Cancelar" para voltar e usar o botão de recusa). Ideal para fases de transição e aculturamento de usuários.
 - **Bloquear aprovação da solução quando houver comentário:** O nível mais estrito. Se houver texto digitado, a gravação no banco de dados é **abortada imediatamente** e uma notificação vermelha de erro (`ERROR`) é exibida na tela, obrigando o usuário a apagar o texto para aprovar, ou usar o botão de recusa.
 
 ---

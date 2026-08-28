@@ -32,6 +32,30 @@ msgstr ""
 msgid "Show warning to the user, allowing the solution approval"
 msgstr "Exibir aviso ao usuário, permitindo a aprovação"
 
+msgid "Confirm approval with a comment"
+msgstr "Confirmar aprovação com comentário"
+
+msgid "You are about to approve the solution while leaving a comment."
+msgstr "Você está prestes a aprovar a solução deixando um comentário."
+
+msgid ""
+"This comment will not be treated as a pending issue: the ticket will be "
+"closed as if the solution had fully solved the problem."
+msgstr ""
+"Este comentário não será tratado como uma pendência: o chamado será "
+"fechado como se a solução tivesse resolvido totalmente o problema."
+
+msgid "If something is still wrong, click Cancel and use \"Refuse\" instead."
+msgstr ""
+"Se algo ainda não estiver certo, clique em Cancelar e use o botão "
+"\"Recusar\" em vez disso."
+
+msgid "Approve anyway"
+msgstr "Aprovar mesmo assim"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
 msgid "Solution Approval Guard"
 msgstr "Guardião de Aprovação de Soluções"
 
