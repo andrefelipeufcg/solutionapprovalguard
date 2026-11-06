@@ -7,7 +7,11 @@ use CommonGLPI;
 use Glpi\Application\View\TemplateRenderer;
 
 class Config extends CommonDBTM {
-    protected $displaylist = false;
+    public function __construct() {
+        parent::__construct();
+        $this->displaylist = false;
+    }
+
 
     // Força a tela a ler/salvar na mesma tabela exata que o hook criou, ignorando plurais
     public static function getTable($classname = '') {
@@ -41,6 +45,10 @@ class Config extends CommonDBTM {
             '@solutionapprovalguard/config.html.twig',
             [
                 'current_value' => $valor_atual,
+                'action_url' => self::getFormURL(),
+                'csrf_token' => version_compare(GLPI_VERSION, '12.0.0', '<')
+                    ? \Session::getNewCSRFToken()
+                    : '',
             ]
         );
 

@@ -1,8 +1,8 @@
 {% import "components/form/fields_macros.html.twig" as fields %}
 
-<form name="form" action="config.form.php" method="POST">
+<form name="form" action="{{ action_url }}" method="POST">
    <input type="hidden" name="id" value="1">
-   <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token() }}">
+   {% if csrf_token %}<input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token }}">{% endif %}
 
    <table class="tab_cadre_fixe">
       <tr>

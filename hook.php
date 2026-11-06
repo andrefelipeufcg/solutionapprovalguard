@@ -59,7 +59,8 @@ function plugin_solutionapprovalguard_get_content($input_array = null) {
             }
         }
     }
-    return trim(str_replace('&nbsp;', '', strip_tags(html_entity_decode($raw))));
+    $text = strip_tags(html_entity_decode($raw, ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+    return trim(str_replace("\xC2\xA0", ' ', $text));
 }
 
 // Gatilho Principal (Timeline Adicionar e Fechar)
