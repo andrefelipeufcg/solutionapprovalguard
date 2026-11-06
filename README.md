@@ -5,7 +5,9 @@
 <a id="english"></a>
 # Solution Approval Guard (GLPI 10+ Plugin)
 
-[![GLPI 10.0+](https://img.shields.io/badge/GLPI-10.0%2B-blue.svg)](https://glpi-project.org/)
+[![GLPI 10](https://img.shields.io/badge/GLPI-10-red.svg)](https://glpi-project.org/)
+[![GLPI 11](https://img.shields.io/badge/GLPI-11-blue.svg)](https://glpi-project.org/)
+[![GLPI 12](https://img.shields.io/badge/GLPI-12-FFD700.svg)](https://glpi-project.org/)
 [![License: GPL v3+](https://img.shields.io/badge/License-GPL%20v3%2B-green.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 **Solution Approval Guard** is a usability and process integrity plugin developed specifically for **GLPI 10+**. It allows administrators to control whether end users can enter text comments when they decide to **approve** a ticket solution.
@@ -172,7 +174,9 @@ This plugin is free software, distributed under the terms of the **GNU General P
 <a id="português"></a>
 # Guarda de Aprovação de Solução (Plugin para GLPI 10+)
 
-[![GLPI 10.0+](https://img.shields.io/badge/GLPI-10.0%2B-blue.svg)](https://glpi-project.org/)
+[![GLPI 10](https://img.shields.io/badge/GLPI-10-red.svg)](https://glpi-project.org/)
+[![GLPI 11](https://img.shields.io/badge/GLPI-11-blue.svg)](https://glpi-project.org/)
+[![GLPI 12](https://img.shields.io/badge/GLPI-12-FFD700.svg)](https://glpi-project.org/)
 [![License: GPL v3+](https://img.shields.io/badge/License-GPL%20v3%2B-green.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 O **Guarda de Aprovação de Solução** é um plugin de usabilidade e integridade de processos desenvolvido especificamente para o **GLPI 10+**. Ele permite que administradores controlem se os usuários finais podem ou não inserir comentários de texto no momento em que decidem **aprovar** a solução de um chamado.
