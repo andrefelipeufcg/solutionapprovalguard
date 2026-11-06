@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -15,6 +16,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Determine version from tag
+        id: version
+        run: echo "tag=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -22,19 +30,44 @@ jobs:
           php-version: '8.2'
           tools: composer:v2
 
-      - name: Determine version from tag
-        id: version
-        run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+        continue-on-error: true
+
+      - name: Auto-bump version in files and commit
+        run: |
+          VERSION="${{ steps.version.outputs.tag }}"
+
+          sed -i "s/define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '.*');/define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '${VERSION}');/" setup.php
+
+          if ! grep -Fq "<num>${VERSION}</num>" plugin.xml; then
+            NEW_VERSION_BLOCK="        <version>\n            <num>${VERSION}</num>\n            <compatibility>\&gt;=10.0.0</compatibility>\n            <download_url>https://github.com/andrefelipeufcg/solutionapprovalguard/releases/download/v${VERSION}/glpi-solutionapprovalguard-v${VERSION}.zip</download_url>\n        </version>"
+            sed -i "s|<versions>|<versions>\n${NEW_VERSION_BLOCK}|" plugin.xml
+          fi
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b chore/bump-v${VERSION}
+          git add setup.php plugin.xml
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore: auto-bump version to ${VERSION} [skip ci]"
+            git push -f origin chore/bump-v${VERSION}
+
+            git tag -f v${VERSION}
+            git push origin -f refs/tags/v${VERSION}
+
+            gh pr create --title "chore: auto-bump version to ${VERSION}" --body "Automated version bump for release v${VERSION}." --base main --head chore/bump-v${VERSION}
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build release ZIP
         run: |
           PLUGIN_NAME="solutionapprovalguard"
-          TAG="${{ steps.version.outputs.tag }}"
+          TAG="v${{ steps.version.outputs.tag }}"
 
-          # Create a temporary directory with the plugin name
           mkdir -p /tmp/build/${PLUGIN_NAME}
 
-          # Copy all files except git and CI artifacts
           rsync -a \
             --exclude='.git' \
             --exclude='.github' \
@@ -45,12 +78,12 @@ jobs:
             --exclude='.phpunit.result.cache' \
             ./ /tmp/build/${PLUGIN_NAME}/
 
-          # Create the ZIP from the parent so the archive root is solutionapprovalguard/
           cd /tmp/build
           zip -r "${GITHUB_WORKSPACE}/glpi-solutionapprovalguard-${TAG}.zip" ${PLUGIN_NAME}/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: glpi-solutionapprovalguard-${{ steps.version.outputs.tag }}.zip
+          name: ${{ steps.version.outputs.tag }}
+          files: glpi-solutionapprovalguard-v${{ steps.version.outputs.tag }}.zip
           generate_release_notes: true
