@@ -28,10 +28,8 @@ function plugin_init_solutionapprovalguard() {
     // Registra a página de configuração
     $PLUGIN_HOOKS['config_page']['solutionapprovalguard'] = 'front/config.form.php';
 
-    // Registra a classe para aparecer na aba Configurar > Plugins
-    Plugin::registerClass('GlpiPlugin\Solutionapprovalguard\Config', [
-        'addtabon' => ['Config']
-    ]);
+    // Registra a classe
+    Plugin::registerClass('GlpiPlugin\Solutionapprovalguard\Config');
 }
 
 function plugin_version_solutionapprovalguard() {
