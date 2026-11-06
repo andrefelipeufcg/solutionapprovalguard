@@ -13,6 +13,7 @@
 ---
 
 ## 📋 Table of Contents
+- [Compatibility](#compatibility)
 - [The Problem (Motivation)](#-the-problem-motivation)
 - [✨ Features](#-features)
 - [⚙️ Configuration Modes](#%EF%B8%8F-configuration-modes)
@@ -21,6 +22,14 @@
 - [🛠️ Cache Clearance](#%EF%B8%8F-cache-clearance)
 - [🧠 Technical Architecture](#-technical-architecture)
 - [📄 License](#-license)
+
+---
+
+## Compatibility
+
+The plugin supports GLPI 10, 11, and 12. The GLPI 12 adaptation fixes a fatal error caused by the typed `CommonGLPI::$displaylist` property while retaining compatibility with GLPI 10 and 11.
+
+The configuration form uses the appropriate CSRF handling for each version. Access it from **Setup > Plugins** using the plugin's configuration button; it does not add a tab under **Setup > General**. Empty rich-text comments containing non-breaking spaces are treated as empty.
 
 ---
 
@@ -70,8 +79,10 @@ solutionapprovalguard/
 ├── README.md               # This documentation file
 ├── setup.php               # Initialization, hooks, and plugin metadata
 ├── hook.php                # Installation, uninstallation routines and business rules
-├── inc/
-│   └── config.class.php    # Database Object Definition and Graphic Form
+├── src/
+│   └── Config.php          # Database object and configuration form
+├── templates/
+│   └── config.html.twig    # Configuration form template
 └── front/
     └── config.form.php     # Panel display and data processing controller
 ```
@@ -99,7 +110,7 @@ chown -R www-data:www-data solutionapprovalguard/
 
 **Step 5:** Locate **Solution Approval Guard** in the list, click **Install** and then **Enable** (green lock icon).
 
-**Step 6:** Click on the plugin name to define the desired behavior and click **Save**.
+**Step 6:** Click the configuration button next to the plugin to define the desired behavior and click **Save**.
 
 ---
 
@@ -169,6 +180,7 @@ O **Guarda de Aprovação de Solução** é um plugin de usabilidade e integrida
 ---
 
 ## 📋 Sumário
+- [Compatibilidade](#compatibilidade)
 - [O Problema (Motivação)](#-o-problema-motivação)
 - [✨ Funcionalidades](#-funcionalidades)
 - [⚙️ Modos de Configuração](#%EF%B8%8F-modos-de-configuração)
@@ -177,6 +189,14 @@ O **Guarda de Aprovação de Solução** é um plugin de usabilidade e integrida
 - [🛠️ Limpeza de Cache](#%EF%B8%8F-limpeza-de-cache)
 - [🧠 Arquitetura Técnica](#-arquitetura-técnica)
 - [📄 Licença](#-licença)
+
+---
+
+## Compatibilidade
+
+O plugin é compatível com o GLPI 10, 11 e 12. A adaptação para o GLPI 12 corrige um erro fatal causado pela propriedade tipada `CommonGLPI::$displaylist`, mantendo a compatibilidade com o GLPI 10 e 11.
+
+O formulário de configuração utiliza o tratamento de CSRF adequado a cada versão. Acesse-o em **Configurar > Plugins**, pelo botão de configuração do plugin; nenhuma aba é adicionada em **Configurar > Geral**. Comentários rich text vazios contendo espaços não separáveis são tratados como vazios.
 
 ---
 
@@ -226,8 +246,10 @@ solutionapprovalguard/
 ├── README.md               # Este arquivo de documentação
 ├── setup.php               # Inicialização, ganchos (hooks) e metadados do plugin
 ├── hook.php                # Rotinas de instalação, desinstalação e regras de negócio
-├── inc/
-│   └── config.class.php    # Definição do Objeto de Banco de Dados e Formuário Gráfico
+├── src/
+│   └── Config.php          # Objeto de banco de dados e formulário de configuração
+├── templates/
+│   └── config.html.twig    # Template do formulário de configuração
 └── front/
     └── config.form.php     # Controlador de exibição e processamento de dados do painel
 ```
@@ -255,7 +277,7 @@ chown -R www-data:www-data solutionapprovalguard/
 
 **Passo 5:** Localize o **Solution Approval Guard** na lista, clique em **Instalar** e, em seguida, em **Ativar** (ícone da chave verde).
 
-**Passo 6:** Clique sobre o nome do plugin para definir o comportamento desejado e clique em **Salvar**.
+**Passo 6:** Clique no botão de configuração ao lado do plugin para definir o comportamento desejado e clique em **Salvar**.
 
 ---
 
