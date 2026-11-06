@@ -45,6 +45,10 @@ class Config extends CommonDBTM {
             '@solutionapprovalguard/config.html.twig',
             [
                 'current_value' => $valor_atual,
+                'action_url' => self::getFormURL(),
+                'csrf_token' => version_compare(GLPI_VERSION, '12.0.0', '<')
+                    ? \Session::getNewCSRFToken()
+                    : '',
             ]
         );
 
