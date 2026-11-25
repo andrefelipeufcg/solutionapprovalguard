@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Abisua: Zure soluzioa onartu da, baina zain dauden arazoen berri emateko "
 "soluzioa ukatu edo txartel berri bat ireki behar duzu."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Iruzkin batekin onartzea berehala onartzen da. Bidali ondoren abisu bat bistaratzen da, konponbideari uko eginez edo txartel berri bat irekiz, zain dauden arazoen berri eman behar dela azaltzeko. Ez da berrespen gehigarririk eskatzen eta onarpena ez dago blokeatuta."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Onarpena zerbitzarian blokeatzen da iruzkinak testua duenean. Onartzeko, erabiltzaileak iruzkina garbitu behar du; arazoak irauten badu, irtenbideari uko egin beharko diote. HTML etiketa hutsak eta zuriuneak bakarrik ez dira iruzkintzat hartzen."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Erabiltzaileak iruzkin batekin irtenbide bat onartzen duenean, berrespen-elkarrizketa bat bistaratuko da bidali aurretik. Onartu, hala ere, iruzkinarekin onarpenarekin jarraitzen du. Utzi, ihes egin edo elkarrizketa-koadroa ixteak iruzkina mantentzen du onarpena bidali gabe. Arazoak irauten badu, erabiltzaileak bertan behera utzi eta uko egin beharko dio irtenbidea. Iruzkin hutsek ez dute berrespen gehigarririk behar."

@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "تحذير: تمت الموافقة على حلك، ولكن للإبلاغ عن المشكلات المعلقة، يجب عليك رفض "
 "الحل أو فتح تذكرة جديدة."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "الموافقة مع تعليق مسموح بها على الفور. يتم عرض تحذير بعد الإرسال لتوضيح ضرورة الإبلاغ عن المشكلات المعلقة عن طريق رفض الحل أو فتح تذكرة جديدة. لا يتم طلب تأكيد إضافي ولا يتم حظر الموافقة."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "يتم حظر الموافقة على الخادم عندما يحتوي التعليق على نص. للموافقة، يجب على المستخدم مسح التعليق؛ إذا استمرت المشكلة، يجب عليهم رفض الحل بدلاً من ذلك. علامات HTML والمسافات الفارغة وحدها لا تعتبر تعليقًا."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "عندما يوافق المستخدم على حل ما بتعليق، يتم عرض مربع حوار التأكيد قبل الإرسال. الموافقة على أية حال تواصل الموافقة مع التعليق. إلغاء أو هروب أو إغلاق مربع الحوار يبقي التعليق دون تقديم الموافقة. إذا استمرت المشكلة، فيجب على المستخدم إلغاء الحل ورفضه بدلاً من ذلك. التعليقات الفارغة لا تتطلب تأكيدا إضافيا."

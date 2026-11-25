@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "चेतावनी: आपका समाधान स्वीकृत हो गया था, लेकिन लंबित समस्याओं की रिपोर्ट करने"
 " के लिए आपको समाधान को अस्वीकार करना होगा या नया टिकट खोलना होगा।"
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "टिप्पणी के साथ अनुमोदन की अनुमति तुरंत दी जाती है। प्रस्तुत करने के बाद एक चेतावनी प्रदर्शित की जाती है जिसमें बताया गया है कि लंबित मुद्दों की सूचना समाधान से इनकार करके या नया टिकट खोलकर दी जानी चाहिए। किसी अतिरिक्त पुष्टि का अनुरोध नहीं किया जाता है और अनुमोदन अवरुद्ध नहीं किया जाता है।"
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "जब टिप्पणी में टेक्स्ट होता है तो सर्वर पर अनुमोदन अवरुद्ध हो जाता है। अनुमोदन के लिए, उपयोगकर्ता को टिप्पणी साफ़ करनी होगी; यदि समस्या बनी रहती है, तो उन्हें समाधान से इनकार कर देना चाहिए। केवल खाली HTML टैग और रिक्त स्थान को टिप्पणी नहीं माना जाता है।"
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "जब उपयोगकर्ता किसी टिप्पणी के साथ समाधान को मंजूरी देता है, तो सबमिशन से पहले एक पुष्टिकरण संवाद प्रदर्शित होता है। अनुमोदन वैसे भी टिप्पणी के साथ अनुमोदन जारी रखता है। रद्द करें, एस्केप करें या संवाद बंद करने से टिप्पणी अनुमोदन सबमिट किए बिना बनी रहती है। यदि समस्या बनी रहती है, तो उपयोगकर्ता को समाधान को रद्द कर देना चाहिए और अस्वीकार कर देना चाहिए। खाली टिप्पणियों के लिए अतिरिक्त पुष्टि की आवश्यकता नहीं होती है."

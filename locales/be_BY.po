@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Папярэджанне: Ваша рашэнне было зацверджана, але каб паведаміць пра "
 "нявырашаныя праблемы, вы павінны адхіліць рашэнне або адкрыць новую заяўку."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Адабрэнне з каментарыем дазволена адразу. Пасля адпраўкі з'яўляецца папярэджанне, якое тлумачыць, што аб нявырашаных праблемах трэба паведамляць, адмаўляючыся ад рашэння або адкрываючы новы білет. Дадатковае пацверджанне не запытваецца, і зацвярджэнне не блакуецца."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Ухваленне блакуецца на серверы, калі каментарый змяшчае тэкст. Каб зацвердзіць, карыстальнік павінен ачысціць каментар; калі праблема не знікне, яны павінны адмовіцца ад рашэння. Пустыя HTML-тэгі і прабелы самі па сабе не лічацца каментарамі."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Калі карыстальнік ухваляе рашэнне з каментарыем, перад адпраўкай адлюстроўваецца дыялогавае акно пацверджання. Усе роўна ўхваліць працягвае ўхваленне з каментарыем. Адмена, Escape або закрыццё дыялогавага акна пакідаюць каментарый без адпраўкі зацвярджэння. Калі праблема не знікне, карыстальнік павінен адмяніць рашэнне і адмовіцца ад рашэння. Пустыя каментары не патрабуюць дадатковага пацверджання."

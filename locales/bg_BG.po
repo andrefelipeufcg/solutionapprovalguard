@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Предупреждение: Вашето решение беше одобрено, но за да съобщите за чакащи "
 "проблеми, трябва да отхвърлите решението или да отворите нов билет."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Одобрение с коментар е разрешено веднага. След изпращане се показва предупреждение, което обяснява, че висящите проблеми трябва да бъдат докладвани чрез отказ на решението или отваряне на нов билет. Не се иска допълнително потвърждение и одобрението не се блокира."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Одобрението се блокира на сървъра, когато коментарът съдържа текст. За да одобри, потребителят трябва да изчисти коментара; ако проблемът продължава, вместо това трябва да откажат решението. Празните HTML тагове и интервалите сами по себе си не се считат за коментар."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Когато потребителят одобри решение с коментар, се показва диалогов прозорец за потвърждение преди изпращане. Одобри въпреки това продължава одобрението с коментара. Отказ, Escape или затваряне на диалоговия прозорец запазва коментара без изпращане на одобрение. Ако проблемът продължава, потребителят трябва да анулира и вместо това да откаже решението. Празните коментари не изискват допълнително потвърждение."

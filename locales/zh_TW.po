@@ -46,3 +46,12 @@ msgid ""
 "Warning: Your solution was approved, but to report pending issues you must "
 "refuse the solution or open a new ticket."
 msgstr "警告：您的解決方案已獲得批准，但要報告待處理的問題，您必須拒絕該解決方案或開啟一個新工單。"
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "立即允許帶有評論的批准。提交後會顯示一條警告，說明應透過拒絕解決方案或開立新票證來報告待決問題。無需額外確認，也不會阻止批准。"
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "當評論包含文字時，伺服器上會阻止批准。要批准，用戶必須清除評論；如果問題仍然存在，他們應該拒絕該解決方案。單獨的空 HTML 標籤和空格不被視為註解。"
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "當使用者透過評論批准解決方案時，在提交之前會顯示確認對話方塊。無論如何都要批准繼續批准評論。取消、退出或關閉對話方塊會保留註解而不提交批准。如果問題仍然存在，用戶應該取消並拒絕解決方案。空註釋不需要額外確認。"

@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Попередження: Ваше рішення було затверджено, але щоб повідомити про "
 "невирішені проблеми, ви повинні відхилити рішення або відкрити нову заявку."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Схвалення з коментарем дозволено відразу. Після надсилання відображається попередження, яке пояснює, що про невирішені проблеми слід повідомляти, відмовившись від вирішення або відкривши новий квиток. Додаткове підтвердження не вимагається, і схвалення не блокується."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Схвалення блокується на сервері, якщо коментар містить текст. Щоб схвалити, користувач повинен видалити коментар; якщо проблема не зникає, вони повинні відмовитися від вирішення. Порожні HTML-теги та пробіли не вважаються коментарями."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Коли користувач схвалює рішення за допомогою коментаря, перед надсиланням відображається діалогове вікно підтвердження. Все одно схвалити продовжує схвалення з коментарем. Скасування, вихід або закриття діалогового вікна зберігає коментар без надсилання схвалення. Якщо проблема не зникає, користувач має скасувати та відмовитися від рішення. Порожні коментарі не потребують додаткового підтвердження."

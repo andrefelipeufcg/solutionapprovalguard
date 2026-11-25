@@ -13,6 +13,15 @@ msgstr ""
 msgid "Allowed (GLPI default behavior)"
 msgstr "Erlaubt (GLPI-Standardverhalten)"
 
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Die Genehmigung mit Kommentar wird sofort zugelassen. Nach dem Absenden weist eine Warnung darauf hin, dass offene Probleme durch Ablehnen der Lösung oder durch Erstellen eines neuen Tickets gemeldet werden sollten. Es wird keine zusätzliche Bestätigung verlangt und die Genehmigung wird nicht blockiert."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Die Genehmigung wird auf dem Server blockiert, wenn der Kommentar Text enthält. Zur Genehmigung muss der Benutzer den Kommentar löschen; besteht das Problem weiterhin, sollte er stattdessen die Lösung ablehnen. Leere HTML-Tags und Leerzeichen allein gelten nicht als Kommentar."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Wenn der Benutzer eine Lösung mit Kommentar genehmigt, wird vor dem Absenden ein Bestätigungsdialog angezeigt. Mit Trotzdem genehmigen wird die Genehmigung mit dem Kommentar fortgesetzt. Abbrechen, Escape oder das Schließen des Dialogs erhält den Kommentar, ohne die Genehmigung abzusenden. Besteht das Problem weiterhin, sollte der Benutzer abbrechen und die Lösung ablehnen. Leere Kommentare benötigen keine zusätzliche Bestätigung."
+
 msgid "Block solution approval when there is a comment"
 msgstr "Lösungsgenehmigung blockieren, wenn ein Kommentar vorhanden ist"
 

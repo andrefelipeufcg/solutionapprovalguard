@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Предупреждение: Ваше решение было утверждено, но чтобы сообщить о нерешенных"
 " проблемах, вы должны отклонить решение или открыть новую заявку."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Одобрение с комментарием допускается немедленно. После отправки отображается предупреждение, поясняющее, что о нерешенных проблемах следует сообщать, отказываясь от решения или открывая новую заявку. Никаких дополнительных подтверждений не требуется, и одобрение не блокируется."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Одобрение блокируется на сервере, если комментарий содержит текст. Для одобрения пользователь должен удалить комментарий; если проблема не устранена, вместо этого им следует отказаться от решения. Пустые HTML-теги и пробелы сами по себе не считаются комментариями."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Когда пользователь утверждает решение с комментарием, перед отправкой отображается диалоговое окно подтверждения. Утвердить в любом случае продолжает утверждение с комментарием. Отмена, выход или закрытие диалогового окна сохраняет комментарий без подтверждения. Если проблема не устранена, пользователю следует отменить решение и отказаться от него. Пустые комментарии не требуют дополнительного подтверждения."

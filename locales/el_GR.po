@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Προειδοποίηση: Η λύση σας εγκρίθηκε, αλλά για να αναφέρετε εκκρεμή ζητήματα "
 "πρέπει να απορρίψετε τη λύση ή να ανοίξετε ένα νέο εισιτήριο."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Η έγκριση με σχόλιο επιτρέπεται άμεσα. Μετά την υποβολή εμφανίζεται μια προειδοποίηση για να εξηγήσει ότι τα εκκρεμή ζητήματα πρέπει να αναφέρονται με την άρνηση της λύσης ή το άνοιγμα νέου εισιτηρίου. Δεν ζητείται πρόσθετη επιβεβαίωση και η έγκριση δεν μπλοκάρεται."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Η έγκριση αποκλείεται στον διακομιστή όταν το σχόλιο περιέχει κείμενο. Για την έγκριση, ο χρήστης πρέπει να διαγράψει το σχόλιο. Εάν το πρόβλημα παραμένει, θα πρέπει να αρνηθούν τη λύση. Οι κενές ετικέτες HTML και τα κενά από μόνα τους δεν θεωρούνται σχόλιο."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Όταν ο χρήστης εγκρίνει μια λύση με ένα σχόλιο, εμφανίζεται ένα παράθυρο διαλόγου επιβεβαίωσης πριν από την υποβολή. Η έγκριση πάντως συνεχίζει την έγκριση με το σχόλιο. Η ακύρωση, η διαφυγή ή το κλείσιμο του διαλόγου διατηρεί το σχόλιο χωρίς να υποβληθεί η έγκριση. Εάν το πρόβλημα παραμένει, ο χρήστης θα πρέπει να ακυρώσει και να αρνηθεί τη λύση. Τα κενά σχόλια δεν απαιτούν πρόσθετη επιβεβαίωση."

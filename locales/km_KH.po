@@ -51,3 +51,12 @@ msgstr ""
 "ការព្រមាន៖ ដំណោះស្រាយរបស់អ្នកត្រូវបានអនុម័ត "
 "ប៉ុន្តែដើម្បីរាយការណ៍បញ្ហាដែលមិនទាន់សម្រេច អ្នកត្រូវតែបដិសេធដំណោះស្រាយ "
 "ឬបើកសំបុត្រថ្មី។"
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "ការយល់ព្រមជាមួយនឹងមតិយោបល់ត្រូវបានអនុញ្ញាតភ្លាមៗ។ ការព្រមានត្រូវបានបង្ហាញបន្ទាប់ពីការដាក់ស្នើដើម្បីពន្យល់ថាបញ្ហាដែលមិនទាន់សម្រេចគួរតែត្រូវបានរាយការណ៍ដោយការបដិសេធដំណោះស្រាយឬការបើកសំបុត្រថ្មី។ គ្មានការបញ្ជាក់បន្ថែមត្រូវបានស្នើសុំ ហើយការយល់ព្រមមិនត្រូវបានរារាំងទេ។"
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "ការយល់ព្រមត្រូវបានរារាំងនៅលើម៉ាស៊ីនមេ នៅពេលដែលមតិយោបល់មានអត្ថបទ។ ដើម្បីអនុម័ត អ្នកប្រើប្រាស់ត្រូវតែលុបមតិយោបល់។ ប្រសិនបើបញ្ហានៅតែបន្ត ពួកគេគួរតែបដិសេធដំណោះស្រាយជំនួសវិញ។ ស្លាក HTML ទទេ និងដកឃ្លាតែម្នាក់ឯងមិនត្រូវបានចាត់ទុកថាជាមតិយោបល់ទេ។"
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "នៅពេលអ្នកប្រើប្រាស់អនុម័តដំណោះស្រាយជាមួយមតិយោបល់ ប្រអប់បញ្ជាក់ត្រូវបានបង្ហាញមុនពេលដាក់ស្នើ។ យល់ព្រមយ៉ាងណាក៏ដោយ បន្តការយល់ព្រមជាមួយនឹងមតិយោបល់។ បោះបង់ គេច ឬបិទប្រអប់រក្សាមតិដោយមិនដាក់ស្នើការយល់ព្រម។ ប្រសិនបើបញ្ហានៅតែបន្តកើតមាន អ្នកប្រើប្រាស់គួរតែបោះបង់ ហើយបដិសេធដំណោះស្រាយជំនួសវិញ។ មតិយោបល់ទទេមិនតម្រូវឱ្យមានការបញ្ជាក់បន្ថែមទេ។"

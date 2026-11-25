@@ -51,3 +51,12 @@ msgid ""
 msgstr ""
 "Figyelem: A megoldását jóváhagyták, de a függőben lévő problémák "
 "jelentéséhez el kell utasítania a megoldást, vagy új jegyet kell nyitnia."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "A megjegyzéssel történő jóváhagyás azonnal megengedett. Az elküldést követően figyelmeztetés jelenik meg, amely elmagyarázza, hogy a függőben lévő problémákat a megoldás elutasításával vagy új jegy megnyitásával kell jelenteni. Nincs szükség további megerősítésre, és a jóváhagyás nincs blokkolva."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "A jóváhagyás blokkolva van a szerveren, ha a megjegyzés szöveget tartalmaz. A jóváhagyáshoz a felhasználónak törölnie kell a megjegyzést; ha a probléma továbbra is fennáll, inkább vissza kell utasítaniuk a megoldást. Az üres HTML címkék és szóközök önmagukban nem minősülnek megjegyzésnek."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Amikor a felhasználó megjegyzéssel hagyja jóvá a megoldást, egy megerősítő párbeszédpanel jelenik meg a beküldés előtt. A jóváhagyás mégis a megjegyzéssel folytatódik. A Mégse, Escape vagy a párbeszédpanel bezárása a jóváhagyás elküldése nélkül megtartja a megjegyzést. Ha a probléma továbbra is fennáll, a felhasználónak törölnie kell és vissza kell utasítania a megoldást. Az üres megjegyzések nem igényelnek további megerősítést."

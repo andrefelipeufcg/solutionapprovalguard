@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Upozorenje: Vaše je rješenje odobreno, ali za prijavu problema na čekanju "
 "morate odbiti rješenje ili otvoriti novi tiket."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Odobrenje uz komentar je dopušteno odmah. Upozorenje se prikazuje nakon podnošenja kako bi se objasnilo da se problemi na čekanju trebaju prijaviti odbijanjem rješenja ili otvaranjem nove karte. Ne traži se dodatna potvrda i odobrenje nije blokirano."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Odobrenje je blokirano na poslužitelju kada komentar sadrži tekst. Za odobrenje, korisnik mora obrisati komentar; ako se problem nastavi, trebali bi odbiti rješenje. Same prazne HTML oznake i razmaci ne smatraju se komentarom."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Kada korisnik odobri rješenje komentarom, prije slanja se prikazuje dijaloški okvir za potvrdu. Svejedno odobri nastavlja odobrenje s komentarom. Odustani, Escape ili zatvaranje dijaloškog okvira zadržava komentar bez podnošenja odobrenja. Ako se problem nastavi, korisnik bi trebao otkazati i umjesto toga odbiti rješenje. Prazni komentari ne zahtijevaju dodatnu potvrdu."

@@ -50,3 +50,12 @@ msgid ""
 msgstr ""
 "Peringatan: Solusi Anda disetujui, tetapi untuk melaporkan masalah yang "
 "tertunda, Anda harus menolak solusi atau membuka tiket baru."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "Persetujuan dengan komentar diperbolehkan segera. Peringatan ditampilkan setelah penyerahan untuk menjelaskan bahwa masalah yang tertunda harus dilaporkan dengan menolak solusi atau membuka tiket baru. Tidak ada konfirmasi tambahan yang diminta dan persetujuan tidak diblokir."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "Persetujuan diblokir di server ketika komentar berisi teks. Untuk menyetujuinya, pengguna harus menghapus komentar; jika masalah terus berlanjut, mereka sebaiknya menolak solusi tersebut. Tag dan spasi HTML kosong saja tidak dianggap sebagai komentar."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Ketika pengguna menyetujui solusi dengan komentar, dialog konfirmasi ditampilkan sebelum pengiriman. Menyetujui tetap melanjutkan persetujuan dengan komentar. Batalkan, Escape, atau tutup dialog, simpan komentar tanpa mengirimkan persetujuan. Jika masalah terus berlanjut, pengguna harus membatalkan dan menolak solusi tersebut. Komentar kosong tidak memerlukan konfirmasi tambahan."

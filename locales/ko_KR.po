@@ -46,3 +46,12 @@ msgid ""
 "Warning: Your solution was approved, but to report pending issues you must "
 "refuse the solution or open a new ticket."
 msgstr "경고: 솔루션이 승인되었지만 보류 중인 문제를 보고하려면 솔루션을 거부하거나 새 티켓을 열어야 합니다."
+
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "댓글을 통한 승인은 즉시 허용됩니다. 해결 방법을 거부하거나 새 티켓을 개설하여 보류 중인 문제를 보고해야 함을 설명하기 위해 제출 후 경고가 표시됩니다. 추가 확인을 요청하지 않으며 승인이 차단되지 않습니다."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "댓글에 텍스트가 포함되어 있으면 서버에서 승인이 차단됩니다. 승인하려면 사용자가 댓글을 지워야 합니다. 문제가 지속되면 대신 해결책을 거부해야 합니다. 빈 HTML 태그와 공백만으로는 주석으로 간주되지 않습니다."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "사용자가 의견을 통해 솔루션을 승인하면 제출 전에 확인 대화 상자가 표시됩니다. 승인은 댓글로 승인을 계속합니다. 취소, 탈출 또는 대화 상자를 닫으면 승인을 제출하지 않고 댓글이 유지됩니다. 문제가 지속되면 사용자는 대신 해결 방법을 취소하고 거부해야 합니다. 빈 댓글에는 추가 확인이 필요하지 않습니다."
