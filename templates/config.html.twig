@@ -24,10 +24,10 @@
                      {{ value == current_value ? 'checked="checked"' : '' }}>
                   {{ label }}
                </label>
-               {% if value == 3 %}
+               {% if value in [1, 2, 3] %}
                   <button type="button" class="btn btn-link"
                      style="padding: 0; margin: 0; min-height: 0; min-width: 0; line-height: 1; border: 0; flex-shrink: 0;"
-                     data-bs-toggle="modal" data-bs-target="#sag-confirmation-preview"
+                     data-bs-toggle="modal" data-bs-target="{{ value == 3 ? '#sag-confirmation-preview' : '#sag-mode-help-' ~ value }}"
                      title="{{ __('Help') }}" aria-label="{{ __('Help') }}">
                      <i class="ti ti-help" aria-hidden="true"></i>
                   </button>
@@ -47,6 +47,31 @@
    </table>
 </form>
 
+{% set mode_help = {
+   1: __('Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked.', 'solutionapprovalguard'),
+   2: __('Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment.', 'solutionapprovalguard')
+} %}
+{% for value, explanation in mode_help %}
+<div class="modal fade" id="sag-mode-help-{{ value }}" tabindex="-1"
+   aria-labelledby="sag-mode-help-title-{{ value }}" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h2 class="modal-title fs-4" id="sag-mode-help-title-{{ value }}">{{ options[value] }}</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Close') }}"></button>
+         </div>
+         <div class="modal-body">
+            <p>{{ explanation }}</p>
+            <div class="text-center">
+               <img src="{{ confirmation_preview_url }}?mode={{ value }}" class="img-fluid" loading="lazy"
+                  alt="{{ options[value] }}">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endfor %}
+
 <div class="modal fade" id="sag-confirmation-preview" tabindex="-1"
    aria-labelledby="sag-confirmation-preview-title" aria-hidden="true">
    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
@@ -57,10 +82,12 @@
             </h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Close') }}"></button>
          </div>
-         <div class="modal-body text-center">
-            <p>{{ __('If the problem is not resolved, cancel and use Refuse instead.', 'solutionapprovalguard') }}</p>
-            <img src="{{ confirmation_preview_url }}" class="img-fluid" loading="lazy"
-               alt="{{ __('Confirm approval with a comment', 'solutionapprovalguard') }}">
+         <div class="modal-body">
+            <p>{{ __('When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation.', 'solutionapprovalguard') }}</p>
+            <div class="text-center">
+               <img src="{{ confirmation_preview_url }}?mode=3" class="img-fluid" loading="lazy"
+                  alt="{{ __('Confirm approval with a comment', 'solutionapprovalguard') }}">
+            </div>
          </div>
       </div>
    </div>

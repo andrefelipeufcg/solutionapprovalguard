@@ -1,3 +1,12 @@
+msgid "Approval with a comment is allowed immediately. A warning is displayed after submission to explain that pending issues should be reported by refusing the solution or opening a new ticket. No additional confirmation is requested and approval is not blocked."
+msgstr "A aprovação com comentário é permitida imediatamente. Após o envio, um aviso informa que pendências devem ser comunicadas recusando a solução ou abrindo um novo chamado. Não é solicitada confirmação extra e a aprovação não é bloqueada."
+
+msgid "Approval is blocked on the server when the comment contains text. To approve, the user must clear the comment; if the problem persists, they should refuse the solution instead. Empty HTML tags and spaces alone are not considered a comment."
+msgstr "A aprovação é bloqueada no servidor quando o comentário contém texto. Para aprovar, o usuário deve apagar o comentário; se o problema persistir, deve recusar a solução. Tags HTML vazias e espaços, por si só, não são considerados um comentário."
+
+msgid "When the user approves a solution with a comment, a confirmation dialog is displayed before submission. Approve anyway continues the approval with the comment. Cancel, Escape or closing the dialog keeps the comment without submitting the approval. If the problem persists, the user should cancel and refuse the solution instead. Empty comments do not require additional confirmation."
+msgstr "Ao tentar aprovar uma solução com comentário, o usuário visualiza um diálogo de confirmação antes do envio. A opção Aprovar mesmo assim permite continuar a aprovação com o comentário. Ao clicar em Cancelar, pressionar Escape ou fechar o diálogo, o comentário é preservado e a aprovação não é enviada. Se o problema ainda não foi resolvido, o usuário deve cancelar e utilizar a opção Recusar. Comentários vazios não exigem confirmação extra."
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"

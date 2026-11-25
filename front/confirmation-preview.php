@@ -17,8 +17,18 @@ if (!defined('GLPI_ROOT')) {
 
 Session::checkRight('config', UPDATE);
 
-// Serve the fixed documentation image without exposing arbitrary file paths.
-$image = __DIR__ . '/../docs/screenshots/screenshot3.png';
+// Only serve the documentation image assigned to each supported mode.
+$images = [
+    '1' => 'screenshot5.png',
+    '2' => 'screenshot4.png',
+    '3' => 'screenshot6.png',
+];
+$mode = $_GET['mode'] ?? '3';
+if (!is_string($mode) || !isset($images[$mode])) {
+    http_response_code(404);
+    exit;
+}
+$image = __DIR__ . '/../docs/screenshots/' . $images[$mode];
 if (!is_file($image)) {
     http_response_code(404);
     exit;
