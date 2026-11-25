@@ -46,6 +46,7 @@ class Config extends CommonDBTM {
             [
                 'current_value' => $valor_atual,
                 'action_url' => self::getFormURL(),
+                'confirmation_preview_url' => dirname(self::getFormURL()) . '/confirmation-preview.php',
                 'csrf_token' => version_compare(GLPI_VERSION, '12.0.0', '<')
                     ? \Session::getNewCSRFToken()
                     : '',

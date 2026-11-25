@@ -35,6 +35,24 @@ msgstr "Show warning to the user, allowing the solution approval"
 msgid "Solution Approval Guard"
 msgstr "Solution Approval Guard"
 
+msgid "Ask for confirmation before approving a solution with a comment"
+msgstr "Ask for confirmation before approving a solution with a comment"
+
+msgid "Confirm approval with a comment"
+msgstr "Confirm approval with a comment"
+
+msgid "You are about to approve the solution while leaving a comment."
+msgstr "You are about to approve the solution while leaving a comment."
+
+msgid "If the problem is not resolved, cancel and use Refuse instead."
+msgstr "If the problem is not resolved, cancel and use Refuse instead."
+
+msgid "Approve anyway"
+msgstr "Approve anyway"
+
+msgid "Cancel"
+msgstr "Cancel"
+
 msgid "Solution Approval Settings"
 msgstr "Solution Approval Settings"
 

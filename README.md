@@ -64,11 +64,14 @@ However, there is a common usability deviation in production environments: some 
 
 ## ⚙️ Configuration Modes
 
-The administrator can define three rigor levels in the plugin panel:
+The administrator can choose four modes in the plugin panel:
 
 - **Allowed (GLPI default behavior):** The plugin remains neutral. Users can approve solutions and add comments simultaneously.
 - **Show warning to the user:** If the user types a comment and clicks approve, GLPI will display a yellow warning balloon (`WARNING`) at the top of the screen, but will allow the ticket to be closed. Ideal for transition phases and user acculturation.
+- **Ask for confirmation before approving a solution with a comment:** Displays a confirmation dialog before submitting. **Approve anyway** continues the approval; **Cancel**, Escape or closing the dialog keeps the comment without submitting. Empty comments do not require confirmation. This is a separate option: the existing warning mode is unchanged.
 - **Block solution approval when there is a comment:** The strictest level. If there is typed text, the database save is **aborted immediately** and a red error notification (`ERROR`) is displayed on the screen, forcing the user to erase the text to approve, or use the refuse button.
+
+The confirmation mode is a browser usability aid and requires JavaScript; it does not enforce confirmation for APIs or direct requests. Use the block mode for server-side enforcement. Existing settings are preserved; no database schema migration is required. The confirmation flow is adapted from the contribution by [steve-hbt](https://github.com/steve-hbt) in [PR #3](https://github.com/andrefelipeufcg/solutionapprovalguard/pull/3).
 
 ---
 
@@ -233,11 +236,14 @@ O **Guarda de Aprovação de Solução** resolve essa contradição forçando o 
 
 ## ⚙️ Modos de Configuração
 
-O administrador pode definir três níveis de rigor no painel do plugin:
+O administrador pode escolher quatro modos no painel do plugin:
 
 - **Permitidos (comportamento padrão do GLPI):** O plugin permanece neutro. Os usuários podem aprovar soluções e adicionar comentários simultaneamente.
 - **Exibir aviso ao usuário:** Caso o usuário digite um comentário e clique em aprovar, o GLPI exibirá um balão de aviso amarelo (`WARNING`) no topo da tela, mas permitirá o fechamento do chamado. Ideal para fases de transição e aculturamento de usuários.
+- **Solicitar confirmação antes de aprovar uma solução com comentário:** Exibe um diálogo antes do envio. **Aprovar mesmo assim** continua a aprovação; **Cancelar**, Escape ou fechar o diálogo preserva o comentário sem enviar. Comentários vazios não exigem confirmação. Esta é uma opção independente: o modo de aviso existente permanece inalterado.
 - **Bloquear aprovação da solução quando houver comentário:** O nível mais estrito. Se houver texto digitado, a gravação no banco de dados é **abortada imediatamente** e uma notificação vermelha de erro (`ERROR`) é exibida na tela, obrigando o usuário a apagar o texto para aprovar, ou usar o botão de recusa.
+
+O modo de confirmação auxilia o usuário no navegador e depende de JavaScript; não exige confirmação em APIs ou requisições diretas. Para bloqueio no servidor, utilize o modo de bloqueio. As configurações existentes são preservadas e não há alteração no esquema do banco. O fluxo de confirmação foi adaptado da contribuição de [steve-hbt](https://github.com/steve-hbt) no [PR #3](https://github.com/andrefelipeufcg/solutionapprovalguard/pull/3).
 
 ---
 

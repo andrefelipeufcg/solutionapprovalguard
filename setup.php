@@ -27,6 +27,13 @@ function plugin_init_solutionapprovalguard() {
 
     // Registra a página de configuração
     $PLUGIN_HOOKS['config_page']['solutionapprovalguard'] = 'front/config.form.php';
+
+    if (Session::getLoginUserID() && plugin_solutionapprovalguard_get_config() === 3) {
+        $PLUGIN_HOOKS['add_javascript']['solutionapprovalguard'] = [
+            'ajax/js_config.php',
+            'js/solutionapprovalguard.js',
+        ];
+    }
 }
 
 function plugin_version_solutionapprovalguard() {

@@ -21,9 +21,19 @@ if (!$config->getFromDB(1)) {
 
 // Salva os dados se o form for enviado
 if (isset($_POST["update"])) {
+    $mode = $_POST['allow_comments'] ?? null;
+    if (!is_string($mode) || !in_array($mode, ['0', '1', '2', '3'], true)) {
+        Session::addMessageAfterRedirect(
+            __('Error saving configuration.', 'solutionapprovalguard'),
+            false,
+            ERROR
+        );
+        Html::back();
+        return;
+    }
     $result = $config->update([
         'id'             => 1,
-        'allow_comments' => (int)($_POST['allow_comments'] ?? 0),
+        'allow_comments' => (int)$mode,
     ]);
     if ($result) {
         Session::addMessageAfterRedirect(

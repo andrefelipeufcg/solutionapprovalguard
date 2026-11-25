@@ -14,14 +14,25 @@
             {% set options = {
                0: __('Allowed (GLPI default behavior)', 'solutionapprovalguard'),
                1: __('Show warning to the user, allowing the solution approval', 'solutionapprovalguard'),
+               3: __('Ask for confirmation before approving a solution with a comment', 'solutionapprovalguard'),
                2: __('Block solution approval when there is a comment', 'solutionapprovalguard')
             } %}
             {% for value, label in options %}
-               <label style="display: block; margin-bottom: 8px; cursor: pointer;">
+               <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 4px;">
+               <label style="cursor: pointer; margin: 0;">
                   <input type="radio" name="allow_comments" value="{{ value }}"
                      {{ value == current_value ? 'checked="checked"' : '' }}>
                   {{ label }}
                </label>
+               {% if value == 3 %}
+                  <button type="button" class="btn btn-link"
+                     style="padding: 0; margin: 0; min-height: 0; min-width: 0; line-height: 1; border: 0; flex-shrink: 0;"
+                     data-bs-toggle="modal" data-bs-target="#sag-confirmation-preview"
+                     title="{{ __('Help') }}" aria-label="{{ __('Help') }}">
+                     <i class="ti ti-help" aria-hidden="true"></i>
+                  </button>
+               {% endif %}
+               </div>
             {% endfor %}
          </td>
       </tr>
@@ -35,3 +46,22 @@
       </tr>
    </table>
 </form>
+
+<div class="modal fade" id="sag-confirmation-preview" tabindex="-1"
+   aria-labelledby="sag-confirmation-preview-title" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h2 class="modal-title fs-4" id="sag-confirmation-preview-title">
+               {{ __('Ask for confirmation before approving a solution with a comment', 'solutionapprovalguard') }}
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Close') }}"></button>
+         </div>
+         <div class="modal-body text-center">
+            <p>{{ __('If the problem is not resolved, cancel and use Refuse instead.', 'solutionapprovalguard') }}</p>
+            <img src="{{ confirmation_preview_url }}" class="img-fluid" loading="lazy"
+               alt="{{ __('Confirm approval with a comment', 'solutionapprovalguard') }}">
+         </div>
+      </div>
+   </div>
+</div>
