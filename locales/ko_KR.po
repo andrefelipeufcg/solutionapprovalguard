@@ -1,3 +1,6 @@
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "사용자에게 경고를 표시하고 추가 확인 후에만 승인을 허용합니다"
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"

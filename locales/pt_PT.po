@@ -35,8 +35,8 @@ msgstr "Exibir aviso ao usuário, permitindo a aprovação"
 msgid "Solution Approval Guard"
 msgstr "Guardião de Aprovação de Soluções"
 
-msgid "Ask for confirmation before approving a solution with a comment"
-msgstr "Pedir confirmação antes de aprovar uma solução com comentário"
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "Exibir aviso ao utilizador, permitindo a aprovação, mas apenas após confirmação adicional"
 
 msgid "Confirm approval with a comment"
 msgstr "Confirmar aprovação com comentário"

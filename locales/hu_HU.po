@@ -1,3 +1,6 @@
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "Figyelmeztetés megjelenítése a felhasználónak, a jóváhagyás engedélyezése csak további megerősítés után"
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"

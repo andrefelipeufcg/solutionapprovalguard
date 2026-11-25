@@ -1,3 +1,6 @@
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "Hiển thị cảnh báo cho người dùng, chỉ cho phép phê duyệt sau khi xác nhận bổ sung"
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"

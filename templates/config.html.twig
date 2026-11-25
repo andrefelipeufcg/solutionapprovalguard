@@ -14,7 +14,7 @@
             {% set options = {
                0: __('Allowed (GLPI default behavior)', 'solutionapprovalguard'),
                1: __('Show warning to the user, allowing the solution approval', 'solutionapprovalguard'),
-               3: __('Ask for confirmation before approving a solution with a comment', 'solutionapprovalguard'),
+               3: __('Show a warning to the user, allowing approval only after additional confirmation', 'solutionapprovalguard'),
                2: __('Block solution approval when there is a comment', 'solutionapprovalguard')
             } %}
             {% for value, label in options %}
@@ -53,7 +53,7 @@
       <div class="modal-content">
          <div class="modal-header">
             <h2 class="modal-title fs-4" id="sag-confirmation-preview-title">
-               {{ __('Ask for confirmation before approving a solution with a comment', 'solutionapprovalguard') }}
+               {{ __('Show a warning to the user, allowing approval only after additional confirmation', 'solutionapprovalguard') }}
             </h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Close') }}"></button>
          </div>

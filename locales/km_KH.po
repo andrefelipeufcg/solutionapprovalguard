@@ -1,3 +1,6 @@
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "បង្ហាញការព្រមានដល់អ្នកប្រើ ហើយអនុញ្ញាតឱ្យអនុម័តតែបន្ទាប់ពីមានការបញ្ជាក់បន្ថែមប៉ុណ្ណោះ"
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"

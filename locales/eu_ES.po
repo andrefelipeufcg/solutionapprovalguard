@@ -1,3 +1,6 @@
+msgid "Show a warning to the user, allowing approval only after additional confirmation"
+msgstr "Erabiltzaileari abisua erakutsi, eta onarpena berrespen gehigarri baten ondoren soilik baimendu"
+
 msgid ""
 msgstr ""
 "Project-Id-Version: SolutionApprovalGuard 1.0\n"
