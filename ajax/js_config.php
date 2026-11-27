@@ -32,7 +32,8 @@ $config = [
     'i18n' => [
         'title' => __('Confirm approval with a comment', 'solutionapprovalguard'),
         'message' => __('You are about to approve the solution while leaving a comment.', 'solutionapprovalguard'),
-        'detail' => __('If the problem is not resolved, cancel and use Refuse instead.', 'solutionapprovalguard'),
+        'detail' => __('This comment will not be treated as a pending issue: the ticket will be closed as if the solution had fully solved the problem.', 'solutionapprovalguard'),
+        'note' => __('If something is still wrong, click Cancel and use "Refuse" instead.', 'solutionapprovalguard'),
         'confirm' => __('Approve anyway', 'solutionapprovalguard'),
         'cancel' => __('Cancel', 'solutionapprovalguard'),
     ],

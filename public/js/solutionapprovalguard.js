@@ -80,7 +80,7 @@
         const labels = config.i18n;
         if (typeof glpi_html_dialog !== 'function') {
             pending.delete(form);
-            if (window.confirm(labels.message + '\n\n' + labels.detail)) {
+            if (window.confirm(labels.message + '\n\n' + labels.detail + '\n\n' + labels.note)) {
                 resume();
             }
             return;
@@ -88,13 +88,13 @@
 
         let approved = false;
         glpi_html_dialog({
-            title: escapeHtml(labels.title),
-            body: '<p>' + escapeHtml(labels.message) + '</p><p>' + escapeHtml(labels.detail) + '</p>',
+            title: '<i class="ti ti-alert-triangle text-warning me-2" aria-hidden="true"></i>' + escapeHtml(labels.title),
+            body: '<p>' + escapeHtml(labels.message) + '</p><p>' + escapeHtml(labels.detail) + '</p><p><strong>' + escapeHtml(labels.note) + '</strong></p>',
             buttons: [
                 { label: escapeHtml(labels.cancel), class: 'btn-secondary' },
                 {
                     label: escapeHtml(labels.confirm),
-                    class: 'btn-success',
+                    class: 'btn-success text-white',
                     click: function () { approved = true; }
                 }
             ],
